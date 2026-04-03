@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import pickle
 from typing import Any
 
 import networkx as nx
@@ -42,7 +43,8 @@ def run_node2vec_training(
     device: str,
 ) -> dict[str, Any]:
     """Train Node2Vec and export validation/test predictions."""
-    graph = nx.read_gpickle(graph_path)
+    with Path(graph_path).open("rb") as handle:
+        graph: nx.Graph = pickle.load(handle)
     nodes_df = pd.read_csv(node_mapping_path)
     num_nodes = int(nodes_df["global_id"].max()) + 1
 

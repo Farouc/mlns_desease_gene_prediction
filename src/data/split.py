@@ -123,18 +123,35 @@ def _attach_global_ids(
     gene_type: str,
 ) -> pd.DataFrame:
     """Add global IDs to local Disease-Gene pairs."""
-    disease_map = node_mapping[node_mapping["node_type"] == disease_type][
-        ["local_id", "global_id"]
-    ].rename(columns={"local_id": "disease_local_id", "global_id": "disease_global_id"})
-
-    gene_map = node_mapping[node_mapping["node_type"] == gene_type][["local_id", "global_id"]].rename(
-        columns={"local_id": "gene_local_id", "global_id": "gene_global_id"}
+    disease_lookup = (
+        node_mapping[node_mapping["node_type"] == disease_type][["local_id", "global_id"]]
+        .set_index("local_id")["global_id"]
+        .to_dict()
+    )
+    gene_lookup = (
+        node_mapping[node_mapping["node_type"] == gene_type][["local_id", "global_id"]]
+        .set_index("local_id")["global_id"]
+        .to_dict()
     )
 
-    merged = pairs.merge(disease_map, on="disease_local_id", how="left")
-    merged = merged.merge(gene_map, on="gene_local_id", how="left")
+    merged = pairs.copy()
+
+    if "disease_global_id" not in merged.columns:
+        merged["disease_global_id"] = merged["disease_local_id"].map(disease_lookup)
+    else:
+        mapped = merged["disease_local_id"].map(disease_lookup)
+        merged["disease_global_id"] = merged["disease_global_id"].fillna(mapped)
+
+    if "gene_global_id" not in merged.columns:
+        merged["gene_global_id"] = merged["gene_local_id"].map(gene_lookup)
+    else:
+        mapped = merged["gene_local_id"].map(gene_lookup)
+        merged["gene_global_id"] = merged["gene_global_id"].fillna(mapped)
+
     if merged[["disease_global_id", "gene_global_id"]].isnull().any().any():
         raise RuntimeError("Failed to map some local IDs to global IDs.")
+    merged["disease_global_id"] = merged["disease_global_id"].astype(int)
+    merged["gene_global_id"] = merged["gene_global_id"].astype(int)
     return merged
 
 

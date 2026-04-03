@@ -5,6 +5,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from pathlib import Path
+import pickle
 from typing import Any
 
 import networkx as nx
@@ -117,7 +118,8 @@ def save_graph_artifacts(
     """Persist graph objects to disk."""
     out_dir = ensure_dir(processed_dir)
     nx_path = out_dir / "graph_nx.gpickle"
-    nx.write_gpickle(graph_result.nx_graph, nx_path)
+    with nx_path.open("wb") as handle:
+        pickle.dump(graph_result.nx_graph, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
     artifacts: dict[str, Path] = {"networkx": nx_path}
     if graph_result.hetero_data is not None and torch is not None:

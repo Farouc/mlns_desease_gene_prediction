@@ -12,8 +12,10 @@ env/
 .ipynb_checkpoints/
 
 # Data artifacts
+data/raw/*
 data/processed/*
 data/splits/*
+!data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/splits/.gitkeep
 
@@ -27,3 +29,6 @@ experiments/figures/*
 
 # OS files
 .DS_Store
+
+# Local tooling scratch file
+.codex

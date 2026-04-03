@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
+import pickle
 from typing import Any
 import sys
 
@@ -195,7 +196,8 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
 
     if run_heuristics:
         logger.info("Running heuristic baselines")
-        nx_graph = nx.read_gpickle(graph_artifacts["networkx"])
+        with Path(graph_artifacts["networkx"]).open("rb") as handle:
+            nx_graph = pickle.load(handle)
         heur_scores = score_pairs_with_heuristics(nx_graph, test_df)
         heur_pred = test_df.merge(
             heur_scores,
@@ -300,6 +302,7 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
         metapaths = config.get("metapaths", {}).get("definitions", DEFAULT_METAPATHS)
         counter = MetapathCounter(
             adjacency=typed_adjacency,
+            node_counts=metadata.get("node_counts", {}),
             cache_size=int(config.get("metapaths", {}).get("cache_size", 100_000)),
         )
 

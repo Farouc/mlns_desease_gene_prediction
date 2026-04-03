@@ -17,7 +17,6 @@ from src.evaluation.metrics import compute_auc_roc
 from src.models.han_model import HANLinkPredictor
 from src.training.trainer_utils import (
     build_pair_tensors,
-    iterate_minibatches,
     load_split_dataframe,
 )
 from src.utils.io import ensure_dir, save_dataframe
@@ -76,39 +75,28 @@ def run_han_training(
     )
 
     epochs = int(model_config["epochs"])
-    batch_size = int(model_config["batch_size"])
+    _ = int(model_config["batch_size"])
 
     for epoch in tqdm(range(1, epochs + 1), desc="HAN Training", leave=False):
         model.train()
-        running_loss = 0.0
-
-        for batch_df in iterate_minibatches(
+        disease_idx, gene_idx, labels = build_pair_tensors(
             train_df,
-            batch_size=batch_size,
-            seed=seed + epoch,
-            shuffle=True,
-        ):
-            disease_idx, gene_idx, labels = build_pair_tensors(
-                batch_df,
-                disease_col="disease_local_id",
-                gene_col="gene_local_id",
-                label_col="label",
-                device=device,
-            )
-
-            optimizer.zero_grad()
-            loss = model.loss(
-                data=data,
-                disease_indices=disease_idx,
-                gene_indices=gene_idx,
-                labels=labels,
-                disease_type=disease_type,
-                gene_type=gene_type,
-            )
-            loss.backward()
-            optimizer.step()
-
-            running_loss += float(loss.item()) * len(batch_df)
+            disease_col="disease_local_id",
+            gene_col="gene_local_id",
+            label_col="label",
+            device=device,
+        )
+        optimizer.zero_grad()
+        loss = model.loss(
+            data=data,
+            disease_indices=disease_idx,
+            gene_indices=gene_idx,
+            labels=labels,
+            disease_type=disease_type,
+            gene_type=gene_type,
+        )
+        loss.backward()
+        optimizer.step()
 
         if int(model_config.get("eval_every", 5)) > 0 and epoch % int(
             model_config.get("eval_every", 5)
@@ -127,7 +115,7 @@ def run_han_training(
                 y_score=val_scores["score_han"].to_numpy(),
             )
             tqdm.write(
-                f"Epoch {epoch:03d} | loss={running_loss / len(train_df):.4f} | val_auc={val_auc:.4f}"
+                f"Epoch {epoch:03d} | loss={float(loss.item()):.4f} | val_auc={val_auc:.4f}"
             )
 
     val_scores = model.score_pairs(

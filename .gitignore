@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data artifacts
+data/processed/*
+data/splits/*
+!data/processed/.gitkeep
+!data/splits/.gitkeep
+
+# Experiment artifacts
+experiments/results/*
+experiments/logs/*
+experiments/figures/*
+!experiments/results/.gitkeep
+!experiments/logs/.gitkeep
+!experiments/figures/.gitkeep
+
+# OS files
+.DS_Store

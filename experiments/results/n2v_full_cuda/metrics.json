@@ -1,0 +1,17 @@
+{
+  "run_dir": "/mnt/D/mva_P2/MLNS/experiments/results/n2v_full_cuda",
+  "model_metrics": {
+    "heuristics": {
+      "auc_roc": 0.7524895183046826,
+      "auc_pr": 0.42509337793251617,
+      "hits@10": 0.8308823529411765,
+      "mrr": 0.58565346999338
+    },
+    "node2vec": {
+      "auc_roc": 0.5412549753026886,
+      "auc_pr": 0.17281779674921177,
+      "hits@10": 0.47794117647058826,
+      "mrr": 0.24876252052987247
+    }
+  }
+}

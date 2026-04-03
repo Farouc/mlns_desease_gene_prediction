@@ -1,0 +1,1102 @@
+[
+  {
+    "disease": 78,
+    "gene": 11717,
+    "score": 2.550494131761229,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 5259
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 10388,
+    "score": 2.2222930240664875,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 4587
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 11749,
+    "score": 2.1203410399389986,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 4380
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 2434,
+    "score": 1.8655800176535409,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 3609
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 7954,
+    "score": 1.852167254213582,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 3825
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 10389,
+    "score": 1.7617959449128306,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 3498
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 5276,
+    "score": 1.7443420545460055,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 3507
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 7815,
+    "score": 1.7088262709776618,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 3467
+    }
+  },
+  {
+    "disease": 67,
+    "gene": 4043,
+    "score": 1.6968143633309094,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 3567
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 14540,
+    "score": 1.6557145685205013,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 3437
+    }
+  },
+  {
+    "disease": 67,
+    "gene": 10388,
+    "score": 1.5233773039773255,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 3140
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 4,
+    "score": 1.522884298554183,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2845
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 7817,
+    "score": 1.4664349253546285,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2841
+    }
+  },
+  {
+    "disease": 58,
+    "gene": 10389,
+    "score": 1.3757581108863002,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2635
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 3982,
+    "score": 1.3603343258950744,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2595
+    }
+  },
+  {
+    "disease": 92,
+    "gene": 11716,
+    "score": 1.3516488352022746,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2712
+    }
+  },
+  {
+    "disease": 67,
+    "gene": 11750,
+    "score": 1.3179970258528835,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2635
+    }
+  },
+  {
+    "disease": 67,
+    "gene": 13981,
+    "score": 1.28009900304238,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2508
+    }
+  },
+  {
+    "disease": 58,
+    "gene": 3744,
+    "score": 1.2603767944211186,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2456
+    }
+  },
+  {
+    "disease": 58,
+    "gene": 12202,
+    "score": 1.2303987285388538,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2245
+    }
+  },
+  {
+    "disease": 47,
+    "gene": 10388,
+    "score": 1.2288946870227233,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2461
+    }
+  },
+  {
+    "disease": 67,
+    "gene": 13480,
+    "score": 1.2226672194679515,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2473
+    }
+  },
+  {
+    "disease": 135,
+    "gene": 10393,
+    "score": 1.1984547525081246,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2416
+    }
+  },
+  {
+    "disease": 58,
+    "gene": 3738,
+    "score": 1.172290290856867,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2148
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 9218,
+    "score": 1.1668607737504832,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2092
+    }
+  },
+  {
+    "disease": 67,
+    "gene": 10389,
+    "score": 1.1638710047667735,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2327
+    }
+  },
+  {
+    "disease": 92,
+    "gene": 10393,
+    "score": 1.150169806463002,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2303
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 6120,
+    "score": 1.1433235273054994,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2038
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 7108,
+    "score": 1.1181401974691643,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2102
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 17949,
+    "score": 1.1173001205126023,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2131
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 2485,
+    "score": 1.1134432855027911,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2079
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 14036,
+    "score": 1.1120050335919796,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2011
+    }
+  },
+  {
+    "disease": 67,
+    "gene": 7815,
+    "score": 1.1026579581257188,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2194
+    }
+  },
+  {
+    "disease": 80,
+    "gene": 11717,
+    "score": 1.089943233077833,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2181
+    }
+  },
+  {
+    "disease": 47,
+    "gene": 8165,
+    "score": 1.0665803539596663,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2068
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 11585,
+    "score": 1.0658293753077888,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1990
+    }
+  },
+  {
+    "disease": 9,
+    "gene": 8165,
+    "score": 1.0647902726214098,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2012
+    }
+  },
+  {
+    "disease": 64,
+    "gene": 11716,
+    "score": 1.0640587588927721,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2032
+    }
+  },
+  {
+    "disease": 10,
+    "gene": 11716,
+    "score": 1.0520420987139265,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 2149
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 14093,
+    "score": 1.0279573662742039,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1619
+    }
+  },
+  {
+    "disease": 13,
+    "gene": 13981,
+    "score": 1.0005114314007155,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1894
+    }
+  },
+  {
+    "disease": 58,
+    "gene": 14034,
+    "score": 0.9991544871370176,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1821
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 16942,
+    "score": 0.9969557138432276,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1954
+    }
+  },
+  {
+    "disease": 9,
+    "gene": 7815,
+    "score": 0.9701487996336184,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1860
+    }
+  },
+  {
+    "disease": 13,
+    "gene": 11614,
+    "score": 0.9675234805381898,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1868
+    }
+  },
+  {
+    "disease": 9,
+    "gene": 10391,
+    "score": 0.9631561911742013,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1654
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 7324,
+    "score": 0.9569696860485365,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1752
+    }
+  },
+  {
+    "disease": 64,
+    "gene": 10388,
+    "score": 0.953135804849893,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1825
+    }
+  },
+  {
+    "disease": 58,
+    "gene": 12181,
+    "score": 0.9515352176985235,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1686
+    }
+  },
+  {
+    "disease": 113,
+    "gene": 13002,
+    "score": 0.9389778201866269,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1918
+    }
+  },
+  {
+    "disease": 116,
+    "gene": 7815,
+    "score": 0.9338329115185833,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1772
+    }
+  },
+  {
+    "disease": 58,
+    "gene": 11250,
+    "score": 0.9099468211924848,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1677
+    }
+  },
+  {
+    "disease": 65,
+    "gene": 11716,
+    "score": 0.9068596580428907,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1750
+    }
+  },
+  {
+    "disease": 58,
+    "gene": 12978,
+    "score": 0.9052413160762219,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1519
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 13996,
+    "score": 0.9036029832056676,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1370
+    }
+  },
+  {
+    "disease": 58,
+    "gene": 1145,
+    "score": 0.9018161469969725,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1438
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 14236,
+    "score": 0.8816921291976443,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1461
+    }
+  },
+  {
+    "disease": 77,
+    "gene": 12673,
+    "score": 0.881439550024012,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1729
+    }
+  },
+  {
+    "disease": 58,
+    "gene": 14236,
+    "score": 0.8711394180912982,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1459
+    }
+  },
+  {
+    "disease": 9,
+    "gene": 5235,
+    "score": 0.8670363698363183,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1646
+    }
+  },
+  {
+    "disease": 9,
+    "gene": 3738,
+    "score": 0.8660274435621379,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1547
+    }
+  },
+  {
+    "disease": 9,
+    "gene": 4036,
+    "score": 0.8467235241054585,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1455
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 7804,
+    "score": 0.8433599627800119,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1397
+    }
+  },
+  {
+    "disease": 58,
+    "gene": 7798,
+    "score": 0.8417797486211555,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1508
+    }
+  },
+  {
+    "disease": 80,
+    "gene": 18337,
+    "score": 0.8349559078709645,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1530
+    }
+  },
+  {
+    "disease": 82,
+    "gene": 430,
+    "score": 0.8298351314361045,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1490
+    }
+  },
+  {
+    "disease": 92,
+    "gene": 11614,
+    "score": 0.8263681379667858,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1549
+    }
+  },
+  {
+    "disease": 64,
+    "gene": 13981,
+    "score": 0.8260888860725873,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1436
+    }
+  },
+  {
+    "disease": 82,
+    "gene": 12178,
+    "score": 0.8190740498219233,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1462
+    }
+  },
+  {
+    "disease": 65,
+    "gene": 4043,
+    "score": 0.8189208127089461,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1588
+    }
+  },
+  {
+    "disease": 47,
+    "gene": 3738,
+    "score": 0.8140107762574968,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1479
+    }
+  },
+  {
+    "disease": 82,
+    "gene": 12181,
+    "score": 0.808425769439767,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1462
+    }
+  },
+  {
+    "disease": 9,
+    "gene": 16258,
+    "score": 0.8073896624578489,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1434
+    }
+  },
+  {
+    "disease": 13,
+    "gene": 3982,
+    "score": 0.8048980884234892,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1511
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 2489,
+    "score": 0.7995656075153266,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1271
+    }
+  },
+  {
+    "disease": 13,
+    "gene": 12202,
+    "score": 0.799143137832296,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1423
+    }
+  },
+  {
+    "disease": 64,
+    "gene": 14542,
+    "score": 0.761612035849546,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1437
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 7037,
+    "score": 0.7566811633531614,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1134
+    }
+  },
+  {
+    "disease": 99,
+    "gene": 11716,
+    "score": 0.7562355174818906,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1296
+    }
+  },
+  {
+    "disease": 10,
+    "gene": 10388,
+    "score": 0.748504381904042,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1497
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 2630,
+    "score": 0.7393045431293803,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1081
+    }
+  },
+  {
+    "disease": 9,
+    "gene": 7948,
+    "score": 0.7378616879368731,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1317
+    }
+  },
+  {
+    "disease": 67,
+    "gene": 2917,
+    "score": 0.7369576472951065,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1422
+    }
+  },
+  {
+    "disease": 25,
+    "gene": 14543,
+    "score": 0.7185930385390195,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1296
+    }
+  },
+  {
+    "disease": 55,
+    "gene": 11929,
+    "score": 0.7177341096101866,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1276
+    }
+  },
+  {
+    "disease": 47,
+    "gene": 10141,
+    "score": 0.7154771982010687,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1204
+    }
+  },
+  {
+    "disease": 67,
+    "gene": 17949,
+    "score": 0.7144263719017396,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1323
+    }
+  },
+  {
+    "disease": 9,
+    "gene": 2917,
+    "score": 0.7072973885586645,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1346
+    }
+  },
+  {
+    "disease": 12,
+    "gene": 15648,
+    "score": 0.7067464779319605,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1229
+    }
+  },
+  {
+    "disease": 94,
+    "gene": 10388,
+    "score": 0.7062141280760066,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1310
+    }
+  },
+  {
+    "disease": 9,
+    "gene": 15623,
+    "score": 0.6999909304466512,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1210
+    }
+  },
+  {
+    "disease": 80,
+    "gene": 430,
+    "score": 0.6917901113843977,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1355
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 16032,
+    "score": 0.691005703125927,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1166
+    }
+  },
+  {
+    "disease": 92,
+    "gene": 14618,
+    "score": 0.6900490808769367,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1297
+    }
+  },
+  {
+    "disease": 9,
+    "gene": 10172,
+    "score": 0.6888284013532326,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1245
+    }
+  },
+  {
+    "disease": 113,
+    "gene": 9460,
+    "score": 0.6867624886396857,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1265
+    }
+  },
+  {
+    "disease": 67,
+    "gene": 18351,
+    "score": 0.686714416834453,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1234
+    }
+  },
+  {
+    "disease": 92,
+    "gene": 10147,
+    "score": 0.6865810508210912,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 1137
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 7381,
+    "score": 0.6864994301007432,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 701
+    }
+  },
+  {
+    "disease": 78,
+    "gene": 12779,
+    "score": 0.6855156426290852,
+    "top_metapath": "GcGaD",
+    "path_counts": {
+      "DaGpPpG": 0,
+      "DpPhG": 0,
+      "GcGaD": 831
+    }
+  }
+]

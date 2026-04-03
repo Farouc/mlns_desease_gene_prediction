@@ -26,9 +26,24 @@ experiments/figures/*
 !experiments/results/.gitkeep
 !experiments/logs/.gitkeep
 !experiments/figures/.gitkeep
+!experiments/results/n2v_full_cuda/
+!experiments/results/n2v_full_cuda/**
+!experiments/results/han_full_cuda/
+!experiments/results/han_full_cuda/**
+!experiments/results/final_full_cuda_hybrid_e15_fast/
+!experiments/results/final_full_cuda_hybrid_e15_fast/**
+!experiments/figures/n2v_full_cuda/
+!experiments/figures/n2v_full_cuda/**
+!experiments/figures/han_full_cuda/
+!experiments/figures/han_full_cuda/**
+!experiments/figures/final_full_cuda_hybrid_e15_fast/
+!experiments/figures/final_full_cuda_hybrid_e15_fast/**
 
 # OS files
 .DS_Store
 
 # Local tooling scratch file
 .codex
+
+# Local cache
+.cache/

@@ -1,0 +1,23 @@
+{
+  "run_dir": "/mnt/D/mva_P2/MLNS/experiments_hala/results/main2_full_cuda_hybrid_han_metapath_plus",
+  "model_metrics": {
+    "heuristics": {
+      "auc_roc": 0.7300071224699919,
+      "auc_pr": 0.4040200804145193,
+      "hits@10": 0.8382352941176471,
+      "mrr": 0.5874928334084055
+    },
+    "han": {
+      "auc_roc": 0.8582974787889847,
+      "auc_pr": 0.5252588591623145,
+      "hits@10": 0.8455882352941176,
+      "mrr": 0.6650379758266127
+    },
+    "hybrid": {
+      "auc_roc": 0.8585392192000418,
+      "auc_pr": 0.5439148914060157,
+      "hits@10": 0.8382352941176471,
+      "mrr": 0.7210825839068113
+    }
+  }
+}

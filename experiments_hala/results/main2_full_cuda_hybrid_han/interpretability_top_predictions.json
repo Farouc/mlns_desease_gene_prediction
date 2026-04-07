@@ -1,0 +1,3102 @@
+[
+  {
+    "rank": 1,
+    "disease_id": 9,
+    "disease_name": "prostate cancer",
+    "gene_id": 8165,
+    "gene_name": "KRAS",
+    "hybrid_score": 0.9875,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1335,
+    "path_counts": {
+      "DpSpDaG": 92,
+      "DaGpPWpG": 1227,
+      "DaGiG": 16
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 13.1518,
+      "DaGpPWpG": 3.1326,
+      "DaGiG": 0.771
+    },
+    "gnn_score": 0.9821,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 2,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 12202,
+    "gene_name": "PTEN",
+    "hybrid_score": 0.9857,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1851,
+    "path_counts": {
+      "DpSpDaG": 102,
+      "DaGpPWpG": 1721,
+      "DaGiG": 28
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 14.735,
+      "DaGpPWpG": 4.4246,
+      "DaGiG": 1.3965
+    },
+    "gnn_score": 0.9796,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 3,
+    "disease_id": 64,
+    "disease_name": "pancreatic cancer",
+    "gene_id": 7803,
+    "gene_name": "IL1RN",
+    "hybrid_score": 0.9856,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 159,
+    "path_counts": {
+      "DpSpDaG": 69,
+      "DaGpPWpG": 89,
+      "DaGiG": 1
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 9.5104,
+      "DaGpPWpG": 0.1564,
+      "DaGiG": -0.0109
+    },
+    "gnn_score": 0.9796,
+    "path_score": 0.9994,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 4,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 7804,
+    "gene_name": "IL2",
+    "hybrid_score": 0.9844,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 871,
+    "path_counts": {
+      "DpSpDaG": 163,
+      "DaGpPWpG": 698,
+      "DaGiG": 10
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 24.3926,
+      "DaGpPWpG": 1.7491,
+      "DaGiG": 0.4582
+    },
+    "gnn_score": 0.9777,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 5,
+    "disease_id": 47,
+    "disease_name": "lung cancer",
+    "gene_id": 10349,
+    "gene_name": "ABCB1",
+    "hybrid_score": 0.9834,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 279,
+    "path_counts": {
+      "DpSpDaG": 122,
+      "DaGpPWpG": 153,
+      "DaGiG": 4
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 17.9014,
+      "DaGpPWpG": 0.3238,
+      "DaGiG": 0.1455
+    },
+    "gnn_score": 0.9763,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 6,
+    "disease_id": 113,
+    "disease_name": "acquired immunodeficiency syndrome",
+    "gene_id": 7804,
+    "gene_name": "IL2",
+    "hybrid_score": 0.9833,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 522,
+    "path_counts": {
+      "DpSpDaG": 132,
+      "DaGpPWpG": 384,
+      "DaGiG": 6
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 19.4846,
+      "DaGpPWpG": 0.9279,
+      "DaGiG": 0.2497
+    },
+    "gnn_score": 0.9761,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 7,
+    "disease_id": 107,
+    "disease_name": "schizophrenia",
+    "gene_id": 7800,
+    "gene_name": "IL1B",
+    "hybrid_score": 0.9829,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 276,
+    "path_counts": {
+      "DpSpDaG": 100,
+      "DaGpPWpG": 168,
+      "DaGiG": 8
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 14.4183,
+      "DaGpPWpG": 0.363,
+      "DaGiG": 0.354
+    },
+    "gnn_score": 0.9756,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 8,
+    "disease_id": 47,
+    "disease_name": "lung cancer",
+    "gene_id": 8165,
+    "gene_name": "KRAS",
+    "hybrid_score": 0.9822,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1706,
+    "path_counts": {
+      "DpSpDaG": 143,
+      "DaGpPWpG": 1552,
+      "DaGiG": 11
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 21.2261,
+      "DaGpPWpG": 3.9826,
+      "DaGiG": 0.5104
+    },
+    "gnn_score": 0.9746,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9998,
+    "score_quantile_train": 0.9998,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 9,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 3744,
+    "gene_name": "EGFR",
+    "hybrid_score": 0.9803,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 2073,
+    "path_counts": {
+      "DpSpDaG": 146,
+      "DaGpPWpG": 1861,
+      "DaGiG": 66
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 21.7011,
+      "DaGpPWpG": 4.7907,
+      "DaGiG": 3.3773
+    },
+    "gnn_score": 0.9718,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9997,
+    "score_quantile_train": 0.9997,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 10,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 9422,
+    "gene_name": "NOS2",
+    "hybrid_score": 0.9797,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 432,
+    "path_counts": {
+      "DpSpDaG": 75,
+      "DaGpPWpG": 340,
+      "DaGiG": 17
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 10.4603,
+      "DaGpPWpG": 0.8128,
+      "DaGiG": 0.8231
+    },
+    "gnn_score": 0.971,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9997,
+    "score_quantile_train": 0.9997,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 11,
+    "disease_id": 74,
+    "disease_name": "colon cancer",
+    "gene_id": 10349,
+    "gene_name": "ABCB1",
+    "hybrid_score": 0.9791,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 232,
+    "path_counts": {
+      "DpSpDaG": 86,
+      "DaGpPWpG": 136,
+      "DaGiG": 10
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 12.2018,
+      "DaGpPWpG": 0.2793,
+      "DaGiG": 0.4582
+    },
+    "gnn_score": 0.9702,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9996,
+    "score_quantile_train": 0.9996,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 12,
+    "disease_id": 10,
+    "disease_name": "stomach cancer",
+    "gene_id": 7800,
+    "gene_name": "IL1B",
+    "hybrid_score": 0.9779,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 289,
+    "path_counts": {
+      "DpSpDaG": 97,
+      "DaGpPWpG": 187,
+      "DaGiG": 5
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 13.9434,
+      "DaGpPWpG": 0.4127,
+      "DaGiG": 0.1976
+    },
+    "gnn_score": 0.9684,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9995,
+    "score_quantile_train": 0.9995,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 13,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 1145,
+    "gene_name": "ADCY5",
+    "hybrid_score": 0.9772,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1109,
+    "path_counts": {
+      "DpSpDaG": 36,
+      "DaGpPWpG": 1071,
+      "DaGiG": 2
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 4.2858,
+      "DaGpPWpG": 2.7246,
+      "DaGiG": 0.0412
+    },
+    "gnn_score": 0.9707,
+    "path_score": 0.9924,
+    "empirical_confidence": 0.9995,
+    "score_quantile_train": 0.9995,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 14,
+    "disease_id": 78,
+    "disease_name": "hematologic cancer",
+    "gene_id": 7804,
+    "gene_name": "IL2",
+    "hybrid_score": 0.976,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1004,
+    "path_counts": {
+      "DpSpDaG": 98,
+      "DaGpPWpG": 897,
+      "DaGiG": 9
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 14.1017,
+      "DaGpPWpG": 2.2696,
+      "DaGiG": 0.4061
+    },
+    "gnn_score": 0.9657,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 15,
+    "disease_id": 9,
+    "disease_name": "prostate cancer",
+    "gene_id": 7815,
+    "gene_name": "IL6",
+    "hybrid_score": 0.9748,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1269,
+    "path_counts": {
+      "DpSpDaG": 89,
+      "DaGpPWpG": 1176,
+      "DaGiG": 4
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 12.6768,
+      "DaGpPWpG": 2.9992,
+      "DaGiG": 0.1455
+    },
+    "gnn_score": 0.964,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9993,
+    "score_quantile_train": 0.9993,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 16,
+    "disease_id": 78,
+    "disease_name": "hematologic cancer",
+    "gene_id": 7381,
+    "gene_name": "ICAM1",
+    "hybrid_score": 0.9741,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 566,
+    "path_counts": {
+      "DpSpDaG": 56,
+      "DaGpPWpG": 466,
+      "DaGiG": 44
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 7.4522,
+      "DaGpPWpG": 1.1424,
+      "DaGiG": 2.2305
+    },
+    "gnn_score": 0.9631,
+    "path_score": 0.9998,
+    "empirical_confidence": 0.9993,
+    "score_quantile_train": 0.9993,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 17,
+    "disease_id": 47,
+    "disease_name": "lung cancer",
+    "gene_id": 10141,
+    "gene_name": "PDGFA",
+    "hybrid_score": 0.9739,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 909,
+    "path_counts": {
+      "DpSpDaG": 28,
+      "DaGpPWpG": 877,
+      "DaGiG": 4
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 3.0192,
+      "DaGpPWpG": 2.2173,
+      "DaGiG": 0.1455
+    },
+    "gnn_score": 0.9793,
+    "path_score": 0.9612,
+    "empirical_confidence": 0.9993,
+    "score_quantile_train": 0.9993,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 18,
+    "disease_id": 38,
+    "disease_name": "malaria",
+    "gene_id": 7804,
+    "gene_name": "IL2",
+    "hybrid_score": 0.9738,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 317,
+    "path_counts": {
+      "DpSpDaG": 92,
+      "DaGpPWpG": 222,
+      "DaGiG": 3
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 13.1518,
+      "DaGpPWpG": 0.5042,
+      "DaGiG": 0.0933
+    },
+    "gnn_score": 0.9625,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9993,
+    "score_quantile_train": 0.9993,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 19,
+    "disease_id": 47,
+    "disease_name": "lung cancer",
+    "gene_id": 7119,
+    "gene_name": "HIF1A",
+    "hybrid_score": 0.9731,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 392,
+    "path_counts": {
+      "DpSpDaG": 105,
+      "DaGpPWpG": 270,
+      "DaGiG": 17
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 15.2099,
+      "DaGpPWpG": 0.6298,
+      "DaGiG": 0.8231
+    },
+    "gnn_score": 0.9616,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9992,
+    "score_quantile_train": 0.9992,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 20,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 9318,
+    "gene_name": "ATM",
+    "hybrid_score": 0.973,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 686,
+    "path_counts": {
+      "DpSpDaG": 39,
+      "DaGpPWpG": 620,
+      "DaGiG": 27
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 4.7608,
+      "DaGpPWpG": 1.5451,
+      "DaGiG": 1.3444
+    },
+    "gnn_score": 0.9632,
+    "path_score": 0.9958,
+    "empirical_confidence": 0.9992,
+    "score_quantile_train": 0.9992,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 21,
+    "disease_id": 78,
+    "disease_name": "hematologic cancer",
+    "gene_id": 2434,
+    "gene_name": "CREB1",
+    "hybrid_score": 0.9729,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 2410,
+    "path_counts": {
+      "DpSpDaG": 16,
+      "DaGpPWpG": 2365,
+      "DaGiG": 29
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 1.1194,
+      "DaGpPWpG": 6.1088,
+      "DaGiG": 1.4486
+    },
+    "gnn_score": 0.9619,
+    "path_score": 0.9985,
+    "empirical_confidence": 0.9992,
+    "score_quantile_train": 0.9992,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 22,
+    "disease_id": 78,
+    "disease_name": "hematologic cancer",
+    "gene_id": 7815,
+    "gene_name": "IL6",
+    "hybrid_score": 0.9698,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 2295,
+    "path_counts": {
+      "DpSpDaG": 70,
+      "DaGpPWpG": 2218,
+      "DaGiG": 7
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 9.6687,
+      "DaGpPWpG": 5.7244,
+      "DaGiG": 0.3018
+    },
+    "gnn_score": 0.9569,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9991,
+    "score_quantile_train": 0.9991,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 23,
+    "disease_id": 13,
+    "disease_name": "hypertension",
+    "gene_id": 12202,
+    "gene_name": "PTEN",
+    "hybrid_score": 0.9691,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1021,
+    "path_counts": {
+      "DpSpDaG": 33,
+      "DaGpPWpG": 975,
+      "DaGiG": 13
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 3.8108,
+      "DaGpPWpG": 2.4736,
+      "DaGiG": 0.6146
+    },
+    "gnn_score": 0.9597,
+    "path_score": 0.9912,
+    "empirical_confidence": 0.999,
+    "score_quantile_train": 0.999,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 24,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 14034,
+    "gene_name": "STAT3",
+    "hybrid_score": 0.968,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1565,
+    "path_counts": {
+      "DpSpDaG": 131,
+      "DaGpPWpG": 1377,
+      "DaGiG": 57
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 19.3263,
+      "DaGpPWpG": 3.5249,
+      "DaGiG": 2.9081
+    },
+    "gnn_score": 0.9544,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9988,
+    "score_quantile_train": 0.9988,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 25,
+    "disease_id": 85,
+    "disease_name": "malignant glioma",
+    "gene_id": 7800,
+    "gene_name": "IL1B",
+    "hybrid_score": 0.968,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 336,
+    "path_counts": {
+      "DpSpDaG": 166,
+      "DaGpPWpG": 161,
+      "DaGiG": 9
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 24.8675,
+      "DaGpPWpG": 0.3447,
+      "DaGiG": 0.4061
+    },
+    "gnn_score": 0.9542,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9988,
+    "score_quantile_train": 0.9988,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 26,
+    "disease_id": 47,
+    "disease_name": "lung cancer",
+    "gene_id": 8139,
+    "gene_name": "KIT",
+    "hybrid_score": 0.9667,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 899,
+    "path_counts": {
+      "DpSpDaG": 132,
+      "DaGpPWpG": 746,
+      "DaGiG": 21
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 19.4846,
+      "DaGpPWpG": 1.8747,
+      "DaGiG": 1.0316
+    },
+    "gnn_score": 0.9524,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9987,
+    "score_quantile_train": 0.9987,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 27,
+    "disease_id": 12,
+    "disease_name": "Alzheimer's disease",
+    "gene_id": 3744,
+    "gene_name": "EGFR",
+    "hybrid_score": 0.9656,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 630,
+    "path_counts": {
+      "DpSpDaG": 31,
+      "DaGpPWpG": 562,
+      "DaGiG": 37
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 3.4942,
+      "DaGpPWpG": 1.3934,
+      "DaGiG": 1.8656
+    },
+    "gnn_score": 0.9552,
+    "path_score": 0.9898,
+    "empirical_confidence": 0.9986,
+    "score_quantile_train": 0.9986,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 28,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 9820,
+    "gene_name": "PCNA",
+    "hybrid_score": 0.9653,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGiG",
+    "total_path_evidence": 648,
+    "path_counts": {
+      "DpSpDaG": 39,
+      "DaGpPWpG": 448,
+      "DaGiG": 161
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 4.7608,
+      "DaGpPWpG": 1.0953,
+      "DaGiG": 8.3292
+    },
+    "gnn_score": 0.9504,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9986,
+    "score_quantile_train": 0.9986,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 29,
+    "disease_id": 116,
+    "disease_name": "rheumatoid arthritis",
+    "gene_id": 7800,
+    "gene_name": "IL1B",
+    "hybrid_score": 0.9651,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 640,
+    "path_counts": {
+      "DpSpDaG": 156,
+      "DaGpPWpG": 464,
+      "DaGiG": 20
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 23.2843,
+      "DaGpPWpG": 1.1371,
+      "DaGiG": 0.9795
+    },
+    "gnn_score": 0.9502,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9986,
+    "score_quantile_train": 0.9986,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 30,
+    "disease_id": 80,
+    "disease_name": "kidney cancer",
+    "gene_id": 466,
+    "gene_name": "CDKN2A",
+    "hybrid_score": 0.9648,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 389,
+    "path_counts": {
+      "DpSpDaG": 169,
+      "DaGpPWpG": 209,
+      "DaGiG": 11
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 25.3425,
+      "DaGpPWpG": 0.4702,
+      "DaGiG": 0.5104
+    },
+    "gnn_score": 0.9497,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9985,
+    "score_quantile_train": 0.9985,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 31,
+    "disease_id": 38,
+    "disease_name": "malaria",
+    "gene_id": 7815,
+    "gene_name": "IL6",
+    "hybrid_score": 0.9645,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 435,
+    "path_counts": {
+      "DpSpDaG": 63,
+      "DaGpPWpG": 368,
+      "DaGiG": 4
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 8.5605,
+      "DaGpPWpG": 0.8861,
+      "DaGiG": 0.1455
+    },
+    "gnn_score": 0.9496,
+    "path_score": 0.9994,
+    "empirical_confidence": 0.9985,
+    "score_quantile_train": 0.9985,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 32,
+    "disease_id": 67,
+    "disease_name": "melanoma",
+    "gene_id": 7815,
+    "gene_name": "IL6",
+    "hybrid_score": 0.9642,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1600,
+    "path_counts": {
+      "DpSpDaG": 99,
+      "DaGpPWpG": 1500,
+      "DaGiG": 1
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 14.26,
+      "DaGpPWpG": 3.8466,
+      "DaGiG": -0.0109
+    },
+    "gnn_score": 0.9488,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9985,
+    "score_quantile_train": 0.9985,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 33,
+    "disease_id": 80,
+    "disease_name": "kidney cancer",
+    "gene_id": 9218,
+    "gene_name": "MYC",
+    "hybrid_score": 0.9642,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 772,
+    "path_counts": {
+      "DpSpDaG": 157,
+      "DaGpPWpG": 579,
+      "DaGiG": 36
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 23.4426,
+      "DaGpPWpG": 1.4379,
+      "DaGiG": 1.8135
+    },
+    "gnn_score": 0.9488,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9985,
+    "score_quantile_train": 0.9985,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 34,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 7069,
+    "gene_name": "ANXA3",
+    "hybrid_score": 0.963,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 73,
+    "path_counts": {
+      "DpSpDaG": 60,
+      "DaGpPWpG": 3,
+      "DaGiG": 10
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 8.0855,
+      "DaGpPWpG": -0.0685,
+      "DaGiG": 0.4582
+    },
+    "gnn_score": 0.9479,
+    "path_score": 0.9982,
+    "empirical_confidence": 0.9984,
+    "score_quantile_train": 0.9984,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 35,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 17703,
+    "gene_name": "CD8A",
+    "hybrid_score": 0.9601,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 301,
+    "path_counts": {
+      "DpSpDaG": 129,
+      "DaGpPWpG": 170,
+      "DaGiG": 2
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 19.0096,
+      "DaGpPWpG": 0.3682,
+      "DaGiG": 0.0412
+    },
+    "gnn_score": 0.943,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9981,
+    "score_quantile_train": 0.9981,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 36,
+    "disease_id": 85,
+    "disease_name": "malignant glioma",
+    "gene_id": 7804,
+    "gene_name": "IL2",
+    "hybrid_score": 0.9599,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 512,
+    "path_counts": {
+      "DpSpDaG": 240,
+      "DaGpPWpG": 271,
+      "DaGiG": 1
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 36.5833,
+      "DaGpPWpG": 0.6324,
+      "DaGiG": -0.0109
+    },
+    "gnn_score": 0.9427,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9981,
+    "score_quantile_train": 0.9981,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 37,
+    "disease_id": 64,
+    "disease_name": "pancreatic cancer",
+    "gene_id": 17703,
+    "gene_name": "CD8A",
+    "hybrid_score": 0.9591,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 198,
+    "path_counts": {
+      "DpSpDaG": 107,
+      "DaGpPWpG": 87,
+      "DaGiG": 4
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 15.5266,
+      "DaGpPWpG": 0.1512,
+      "DaGiG": 0.1455
+    },
+    "gnn_score": 0.9416,
+    "path_score": 1.0,
+    "empirical_confidence": 0.998,
+    "score_quantile_train": 0.998,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 38,
+    "disease_id": 45,
+    "disease_name": "brain cancer",
+    "gene_id": 8165,
+    "gene_name": "KRAS",
+    "hybrid_score": 0.9584,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 338,
+    "path_counts": {
+      "DpSpDaG": 128,
+      "DaGpPWpG": 206,
+      "DaGiG": 4
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 18.8513,
+      "DaGpPWpG": 0.4624,
+      "DaGiG": 0.1455
+    },
+    "gnn_score": 0.9405,
+    "path_score": 1.0,
+    "empirical_confidence": 0.998,
+    "score_quantile_train": 0.998,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 39,
+    "disease_id": 80,
+    "disease_name": "kidney cancer",
+    "gene_id": 11717,
+    "gene_name": "MAPK3",
+    "hybrid_score": 0.9583,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1486,
+    "path_counts": {
+      "DpSpDaG": 77,
+      "DaGpPWpG": 1398,
+      "DaGiG": 11
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 10.777,
+      "DaGpPWpG": 3.5798,
+      "DaGiG": 0.5104
+    },
+    "gnn_score": 0.9405,
+    "path_score": 1.0,
+    "empirical_confidence": 0.998,
+    "score_quantile_train": 0.998,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 40,
+    "disease_id": 118,
+    "disease_name": "chronic kidney failure",
+    "gene_id": 8165,
+    "gene_name": "KRAS",
+    "hybrid_score": 0.9581,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 396,
+    "path_counts": {
+      "DpSpDaG": 66,
+      "DaGpPWpG": 329,
+      "DaGiG": 1
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 9.0354,
+      "DaGpPWpG": 0.7841,
+      "DaGiG": -0.0109
+    },
+    "gnn_score": 0.9404,
+    "path_score": 0.9995,
+    "empirical_confidence": 0.998,
+    "score_quantile_train": 0.998,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 41,
+    "disease_id": 124,
+    "disease_name": "psoriasis",
+    "gene_id": 7149,
+    "gene_name": "HLA-DRB1",
+    "hybrid_score": 0.9581,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 246,
+    "path_counts": {
+      "DpSpDaG": 71,
+      "DaGpPWpG": 173,
+      "DaGiG": 2
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 9.827,
+      "DaGpPWpG": 0.3761,
+      "DaGiG": 0.0412
+    },
+    "gnn_score": 0.9403,
+    "path_score": 0.9997,
+    "empirical_confidence": 0.998,
+    "score_quantile_train": 0.998,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 42,
+    "disease_id": 78,
+    "disease_name": "hematologic cancer",
+    "gene_id": 11717,
+    "gene_name": "MAPK3",
+    "hybrid_score": 0.9577,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 3433,
+    "path_counts": {
+      "DpSpDaG": 44,
+      "DaGpPWpG": 3359,
+      "DaGiG": 30
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 5.5524,
+      "DaGpPWpG": 8.7084,
+      "DaGiG": 1.5007
+    },
+    "gnn_score": 0.9395,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9979,
+    "score_quantile_train": 0.9979,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 43,
+    "disease_id": 13,
+    "disease_name": "hypertension",
+    "gene_id": 466,
+    "gene_name": "CDKN2A",
+    "hybrid_score": 0.9576,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 257,
+    "path_counts": {
+      "DpSpDaG": 59,
+      "DaGpPWpG": 191,
+      "DaGiG": 7
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 7.9272,
+      "DaGpPWpG": 0.4232,
+      "DaGiG": 0.3018
+    },
+    "gnn_score": 0.94,
+    "path_score": 0.9985,
+    "empirical_confidence": 0.9979,
+    "score_quantile_train": 0.9979,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 44,
+    "disease_id": 124,
+    "disease_name": "psoriasis",
+    "gene_id": 9422,
+    "gene_name": "NOS2",
+    "hybrid_score": 0.9555,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 223,
+    "path_counts": {
+      "DpSpDaG": 80,
+      "DaGpPWpG": 134,
+      "DaGiG": 9
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 11.2519,
+      "DaGpPWpG": 0.2741,
+      "DaGiG": 0.4061
+    },
+    "gnn_score": 0.9364,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.9977,
+    "score_quantile_train": 0.9977,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 45,
+    "disease_id": 9,
+    "disease_name": "prostate cancer",
+    "gene_id": 10422,
+    "gene_name": "PLAU",
+    "hybrid_score": 0.9554,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 232,
+    "path_counts": {
+      "DpSpDaG": 49,
+      "DaGpPWpG": 172,
+      "DaGiG": 11
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 6.344,
+      "DaGpPWpG": 0.3735,
+      "DaGiG": 0.5104
+    },
+    "gnn_score": 0.939,
+    "path_score": 0.9937,
+    "empirical_confidence": 0.9977,
+    "score_quantile_train": 0.9977,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 46,
+    "disease_id": 116,
+    "disease_name": "rheumatoid arthritis",
+    "gene_id": 7815,
+    "gene_name": "IL6",
+    "hybrid_score": 0.9553,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1414,
+    "path_counts": {
+      "DpSpDaG": 174,
+      "DaGpPWpG": 1233,
+      "DaGiG": 7
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 26.1341,
+      "DaGpPWpG": 3.1483,
+      "DaGiG": 0.3018
+    },
+    "gnn_score": 0.9361,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9977,
+    "score_quantile_train": 0.9977,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 47,
+    "disease_id": 113,
+    "disease_name": "acquired immunodeficiency syndrome",
+    "gene_id": 9460,
+    "gene_name": "NRAS",
+    "hybrid_score": 0.9551,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 754,
+    "path_counts": {
+      "DpSpDaG": 81,
+      "DaGpPWpG": 661,
+      "DaGiG": 12
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 11.4102,
+      "DaGpPWpG": 1.6524,
+      "DaGiG": 0.5625
+    },
+    "gnn_score": 0.9358,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9977,
+    "score_quantile_train": 0.9977,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 48,
+    "disease_id": 77,
+    "disease_name": "ovarian cancer",
+    "gene_id": 10349,
+    "gene_name": "ABCB1",
+    "hybrid_score": 0.9545,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 138,
+    "path_counts": {
+      "DpSpDaG": 74,
+      "DaGpPWpG": 59,
+      "DaGiG": 5
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 10.302,
+      "DaGpPWpG": 0.0779,
+      "DaGiG": 0.1976
+    },
+    "gnn_score": 0.935,
+    "path_score": 0.9998,
+    "empirical_confidence": 0.9976,
+    "score_quantile_train": 0.9976,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 49,
+    "disease_id": 9,
+    "disease_name": "prostate cancer",
+    "gene_id": 7821,
+    "gene_name": "CXCL8",
+    "hybrid_score": 0.9542,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 486,
+    "path_counts": {
+      "DpSpDaG": 64,
+      "DaGpPWpG": 416,
+      "DaGiG": 6
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 8.7188,
+      "DaGpPWpG": 1.0116,
+      "DaGiG": 0.2497
+    },
+    "gnn_score": 0.9347,
+    "path_score": 0.9996,
+    "empirical_confidence": 0.9976,
+    "score_quantile_train": 0.9976,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 50,
+    "disease_id": 12,
+    "disease_name": "Alzheimer's disease",
+    "gene_id": 16012,
+    "gene_name": "CASP3",
+    "hybrid_score": 0.9538,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 479,
+    "path_counts": {
+      "DpSpDaG": 68,
+      "DaGpPWpG": 383,
+      "DaGiG": 28
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 9.3521,
+      "DaGpPWpG": 0.9253,
+      "DaGiG": 1.3965
+    },
+    "gnn_score": 0.934,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.9975,
+    "score_quantile_train": 0.9975,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 51,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 14887,
+    "gene_name": "CXCR4",
+    "hybrid_score": 0.9537,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 504,
+    "path_counts": {
+      "DpSpDaG": 64,
+      "DaGpPWpG": 416,
+      "DaGiG": 24
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 8.7188,
+      "DaGpPWpG": 1.0116,
+      "DaGiG": 1.188
+    },
+    "gnn_score": 0.934,
+    "path_score": 0.9998,
+    "empirical_confidence": 0.9975,
+    "score_quantile_train": 0.9975,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 52,
+    "disease_id": 64,
+    "disease_name": "pancreatic cancer",
+    "gene_id": 14338,
+    "gene_name": "TP53",
+    "hybrid_score": 0.9532,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 805,
+    "path_counts": {
+      "DpSpDaG": 213,
+      "DaGpPWpG": 560,
+      "DaGiG": 32
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 32.3086,
+      "DaGpPWpG": 1.3882,
+      "DaGiG": 1.605
+    },
+    "gnn_score": 0.9331,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9975,
+    "score_quantile_train": 0.9975,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 53,
+    "disease_id": 78,
+    "disease_name": "hematologic cancer",
+    "gene_id": 9218,
+    "gene_name": "MYC",
+    "hybrid_score": 0.9525,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1538,
+    "path_counts": {
+      "DpSpDaG": 78,
+      "DaGpPWpG": 1405,
+      "DaGiG": 55
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 10.9353,
+      "DaGpPWpG": 3.5981,
+      "DaGiG": 2.8039
+    },
+    "gnn_score": 0.9321,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9974,
+    "score_quantile_train": 0.9974,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 54,
+    "disease_id": 113,
+    "disease_name": "acquired immunodeficiency syndrome",
+    "gene_id": 16532,
+    "gene_name": "CAT",
+    "hybrid_score": 0.9519,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 154,
+    "path_counts": {
+      "DpSpDaG": 54,
+      "DaGpPWpG": 84,
+      "DaGiG": 16
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 7.1356,
+      "DaGpPWpG": 0.1433,
+      "DaGiG": 0.771
+    },
+    "gnn_score": 0.9324,
+    "path_score": 0.9972,
+    "empirical_confidence": 0.9973,
+    "score_quantile_train": 0.9973,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 55,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 5245,
+    "gene_name": "ABL1",
+    "hybrid_score": 0.9501,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 832,
+    "path_counts": {
+      "DpSpDaG": 49,
+      "DaGpPWpG": 715,
+      "DaGiG": 68
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 6.344,
+      "DaGpPWpG": 1.7936,
+      "DaGiG": 3.4815
+    },
+    "gnn_score": 0.9288,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.9971,
+    "score_quantile_train": 0.9971,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 56,
+    "disease_id": 113,
+    "disease_name": "acquired immunodeficiency syndrome",
+    "gene_id": 7827,
+    "gene_name": "IL10",
+    "hybrid_score": 0.95,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 128,
+    "path_counts": {
+      "DpSpDaG": 92,
+      "DaGpPWpG": 36,
+      "DaGiG": 0
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 13.1518,
+      "DaGpPWpG": 0.0178,
+      "DaGiG": -0.063
+    },
+    "gnn_score": 0.9285,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9971,
+    "score_quantile_train": 0.9971,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 57,
+    "disease_id": 86,
+    "disease_name": "chronic obstructive pulmonary disease",
+    "gene_id": 3744,
+    "gene_name": "EGFR",
+    "hybrid_score": 0.9495,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 514,
+    "path_counts": {
+      "DpSpDaG": 62,
+      "DaGpPWpG": 435,
+      "DaGiG": 17
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 8.4021,
+      "DaGpPWpG": 1.0613,
+      "DaGiG": 0.8231
+    },
+    "gnn_score": 0.928,
+    "path_score": 0.9997,
+    "empirical_confidence": 0.9971,
+    "score_quantile_train": 0.9971,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 58,
+    "disease_id": 67,
+    "disease_name": "melanoma",
+    "gene_id": 16012,
+    "gene_name": "CASP3",
+    "hybrid_score": 0.949,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 769,
+    "path_counts": {
+      "DpSpDaG": 112,
+      "DaGpPWpG": 615,
+      "DaGiG": 42
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 16.3182,
+      "DaGpPWpG": 1.5321,
+      "DaGiG": 2.1263
+    },
+    "gnn_score": 0.9271,
+    "path_score": 1.0,
+    "empirical_confidence": 0.997,
+    "score_quantile_train": 0.997,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 59,
+    "disease_id": 9,
+    "disease_name": "prostate cancer",
+    "gene_id": 10364,
+    "gene_name": "SERPINA1",
+    "hybrid_score": 0.9486,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 133,
+    "path_counts": {
+      "DpSpDaG": 30,
+      "DaGpPWpG": 90,
+      "DaGiG": 13
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 3.3359,
+      "DaGpPWpG": 0.159,
+      "DaGiG": 0.6146
+    },
+    "gnn_score": 0.9806,
+    "path_score": 0.8739,
+    "empirical_confidence": 0.9969,
+    "score_quantile_train": 0.9969,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 60,
+    "disease_id": 124,
+    "disease_name": "psoriasis",
+    "gene_id": 4777,
+    "gene_name": "FLT1",
+    "hybrid_score": 0.9482,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 128,
+    "path_counts": {
+      "DpSpDaG": 48,
+      "DaGpPWpG": 77,
+      "DaGiG": 3
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 6.1856,
+      "DaGpPWpG": 0.125,
+      "DaGiG": 0.0933
+    },
+    "gnn_score": 0.9322,
+    "path_score": 0.9857,
+    "empirical_confidence": 0.9969,
+    "score_quantile_train": 0.9969,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 61,
+    "disease_id": 128,
+    "disease_name": "systemic lupus erythematosus",
+    "gene_id": 7815,
+    "gene_name": "IL6",
+    "hybrid_score": 0.9481,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 455,
+    "path_counts": {
+      "DpSpDaG": 117,
+      "DaGpPWpG": 336,
+      "DaGiG": 2
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 17.1098,
+      "DaGpPWpG": 0.8024,
+      "DaGiG": 0.0412
+    },
+    "gnn_score": 0.9259,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9969,
+    "score_quantile_train": 0.9969,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 62,
+    "disease_id": 80,
+    "disease_name": "kidney cancer",
+    "gene_id": 14629,
+    "gene_name": "VEGFA",
+    "hybrid_score": 0.9477,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 579,
+    "path_counts": {
+      "DpSpDaG": 176,
+      "DaGpPWpG": 387,
+      "DaGiG": 16
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 26.4507,
+      "DaGpPWpG": 0.9358,
+      "DaGiG": 0.771
+    },
+    "gnn_score": 0.9252,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9968,
+    "score_quantile_train": 0.9968,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 63,
+    "disease_id": 86,
+    "disease_name": "chronic obstructive pulmonary disease",
+    "gene_id": 7815,
+    "gene_name": "IL6",
+    "hybrid_score": 0.9468,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 567,
+    "path_counts": {
+      "DpSpDaG": 58,
+      "DaGpPWpG": 507,
+      "DaGiG": 2
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 7.7689,
+      "DaGpPWpG": 1.2496,
+      "DaGiG": 0.0412
+    },
+    "gnn_score": 0.9245,
+    "path_score": 0.999,
+    "empirical_confidence": 0.9967,
+    "score_quantile_train": 0.9967,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 64,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 14236,
+    "gene_name": "TGFB1",
+    "hybrid_score": 0.9462,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1228,
+    "path_counts": {
+      "DpSpDaG": 113,
+      "DaGpPWpG": 1089,
+      "DaGiG": 26
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 16.4765,
+      "DaGpPWpG": 2.7717,
+      "DaGiG": 1.2922
+    },
+    "gnn_score": 0.9232,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9966,
+    "score_quantile_train": 0.9966,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 65,
+    "disease_id": 68,
+    "disease_name": "atherosclerosis",
+    "gene_id": 7815,
+    "gene_name": "IL6",
+    "hybrid_score": 0.9458,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 654,
+    "path_counts": {
+      "DpSpDaG": 49,
+      "DaGpPWpG": 602,
+      "DaGiG": 3
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 6.344,
+      "DaGpPWpG": 1.4981,
+      "DaGiG": 0.0933
+    },
+    "gnn_score": 0.924,
+    "path_score": 0.9969,
+    "empirical_confidence": 0.9966,
+    "score_quantile_train": 0.9966,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 66,
+    "disease_id": 107,
+    "disease_name": "schizophrenia",
+    "gene_id": 14338,
+    "gene_name": "TP53",
+    "hybrid_score": 0.9451,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 415,
+    "path_counts": {
+      "DpSpDaG": 58,
+      "DaGpPWpG": 315,
+      "DaGiG": 42
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 7.7689,
+      "DaGpPWpG": 0.7475,
+      "DaGiG": 2.1263
+    },
+    "gnn_score": 0.9217,
+    "path_score": 0.9998,
+    "empirical_confidence": 0.9964,
+    "score_quantile_train": 0.9964,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 67,
+    "disease_id": 86,
+    "disease_name": "chronic obstructive pulmonary disease",
+    "gene_id": 14311,
+    "gene_name": "TNF",
+    "hybrid_score": 0.9451,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 270,
+    "path_counts": {
+      "DpSpDaG": 81,
+      "DaGpPWpG": 187,
+      "DaGiG": 2
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 11.4102,
+      "DaGpPWpG": 0.4127,
+      "DaGiG": 0.0412
+    },
+    "gnn_score": 0.9216,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.9964,
+    "score_quantile_train": 0.9964,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 68,
+    "disease_id": 78,
+    "disease_name": "hematologic cancer",
+    "gene_id": 6780,
+    "gene_name": "NR3C1",
+    "hybrid_score": 0.944,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 314,
+    "path_counts": {
+      "DpSpDaG": 29,
+      "DaGpPWpG": 225,
+      "DaGiG": 60
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 3.1775,
+      "DaGpPWpG": 0.5121,
+      "DaGiG": 3.0645
+    },
+    "gnn_score": 0.9244,
+    "path_score": 0.9899,
+    "empirical_confidence": 0.9964,
+    "score_quantile_train": 0.9964,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 69,
+    "disease_id": 75,
+    "disease_name": "anemia",
+    "gene_id": 7800,
+    "gene_name": "IL1B",
+    "hybrid_score": 0.944,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 294,
+    "path_counts": {
+      "DpSpDaG": 158,
+      "DaGpPWpG": 132,
+      "DaGiG": 4
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 23.601,
+      "DaGpPWpG": 0.2689,
+      "DaGiG": 0.1455
+    },
+    "gnn_score": 0.9199,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9964,
+    "score_quantile_train": 0.9964,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 70,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 3750,
+    "gene_name": "AHR",
+    "hybrid_score": 0.9429,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 208,
+    "path_counts": {
+      "DpSpDaG": 61,
+      "DaGpPWpG": 118,
+      "DaGiG": 29
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 8.2438,
+      "DaGpPWpG": 0.2322,
+      "DaGiG": 1.4486
+    },
+    "gnn_score": 0.9186,
+    "path_score": 0.9996,
+    "empirical_confidence": 0.9962,
+    "score_quantile_train": 0.9962,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 71,
+    "disease_id": 47,
+    "disease_name": "lung cancer",
+    "gene_id": 7821,
+    "gene_name": "CXCL8",
+    "hybrid_score": 0.9425,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 567,
+    "path_counts": {
+      "DpSpDaG": 110,
+      "DaGpPWpG": 448,
+      "DaGiG": 9
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 16.0015,
+      "DaGpPWpG": 1.0953,
+      "DaGiG": 0.4061
+    },
+    "gnn_score": 0.9179,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9962,
+    "score_quantile_train": 0.9962,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 72,
+    "disease_id": 12,
+    "disease_name": "Alzheimer's disease",
+    "gene_id": 9477,
+    "gene_name": "NTRK2",
+    "hybrid_score": 0.9423,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 191,
+    "path_counts": {
+      "DpSpDaG": 58,
+      "DaGpPWpG": 128,
+      "DaGiG": 5
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 7.7689,
+      "DaGpPWpG": 0.2584,
+      "DaGiG": 0.1976
+    },
+    "gnn_score": 0.9186,
+    "path_score": 0.9977,
+    "empirical_confidence": 0.9962,
+    "score_quantile_train": 0.9962,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 73,
+    "disease_id": 9,
+    "disease_name": "prostate cancer",
+    "gene_id": 9820,
+    "gene_name": "PCNA",
+    "hybrid_score": 0.9413,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGiG",
+    "total_path_evidence": 332,
+    "path_counts": {
+      "DpSpDaG": 20,
+      "DaGpPWpG": 222,
+      "DaGiG": 90
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 1.7526,
+      "DaGpPWpG": 0.5042,
+      "DaGiG": 4.6283
+    },
+    "gnn_score": 0.92,
+    "path_score": 0.9911,
+    "empirical_confidence": 0.9961,
+    "score_quantile_train": 0.9961,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 74,
+    "disease_id": 121,
+    "disease_name": "ulcerative colitis",
+    "gene_id": 2494,
+    "gene_name": "CRP",
+    "hybrid_score": 0.9401,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 271,
+    "path_counts": {
+      "DpSpDaG": 92,
+      "DaGpPWpG": 173,
+      "DaGiG": 6
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 13.1518,
+      "DaGpPWpG": 0.3761,
+      "DaGiG": 0.2497
+    },
+    "gnn_score": 0.9144,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9959,
+    "score_quantile_train": 0.9959,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 75,
+    "disease_id": 78,
+    "disease_name": "hematologic cancer",
+    "gene_id": 3982,
+    "gene_name": "EP300",
+    "hybrid_score": 0.9398,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1872,
+    "path_counts": {
+      "DpSpDaG": 35,
+      "DaGpPWpG": 1754,
+      "DaGiG": 83
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 4.1275,
+      "DaGpPWpG": 4.5109,
+      "DaGiG": 4.2634
+    },
+    "gnn_score": 0.914,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9959,
+    "score_quantile_train": 0.9959,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 76,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 8830,
+    "gene_name": "MAOA",
+    "hybrid_score": 0.9395,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 249,
+    "path_counts": {
+      "DpSpDaG": 46,
+      "DaGpPWpG": 202,
+      "DaGiG": 1
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 5.869,
+      "DaGpPWpG": 0.4519,
+      "DaGiG": -0.0109
+    },
+    "gnn_score": 0.9202,
+    "path_score": 0.9843,
+    "empirical_confidence": 0.9959,
+    "score_quantile_train": 0.9959,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 77,
+    "disease_id": 9,
+    "disease_name": "prostate cancer",
+    "gene_id": 14514,
+    "gene_name": "TYMS",
+    "hybrid_score": 0.9387,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 357,
+    "path_counts": {
+      "DpSpDaG": 81,
+      "DaGpPWpG": 213,
+      "DaGiG": 63
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 11.4102,
+      "DaGpPWpG": 0.4807,
+      "DaGiG": 3.2209
+    },
+    "gnn_score": 0.9125,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9958,
+    "score_quantile_train": 0.9958,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 78,
+    "disease_id": 9,
+    "disease_name": "prostate cancer",
+    "gene_id": 8981,
+    "gene_name": "MMP2",
+    "hybrid_score": 0.9385,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 333,
+    "path_counts": {
+      "DpSpDaG": 76,
+      "DaGpPWpG": 244,
+      "DaGiG": 13
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 10.6186,
+      "DaGpPWpG": 0.5618,
+      "DaGiG": 0.6146
+    },
+    "gnn_score": 0.9121,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.9958,
+    "score_quantile_train": 0.9958,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 79,
+    "disease_id": 55,
+    "disease_name": "Parkinson's disease",
+    "gene_id": 13026,
+    "gene_name": "BDNF",
+    "hybrid_score": 0.9378,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 210,
+    "path_counts": {
+      "DpSpDaG": 106,
+      "DaGpPWpG": 101,
+      "DaGiG": 3
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 15.3683,
+      "DaGpPWpG": 0.1878,
+      "DaGiG": 0.0933
+    },
+    "gnn_score": 0.9111,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9957,
+    "score_quantile_train": 0.9957,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 80,
+    "disease_id": 113,
+    "disease_name": "acquired immunodeficiency syndrome",
+    "gene_id": 7818,
+    "gene_name": "IL6ST",
+    "hybrid_score": 0.9366,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 568,
+    "path_counts": {
+      "DpSpDaG": 36,
+      "DaGpPWpG": 526,
+      "DaGiG": 6
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 4.2858,
+      "DaGpPWpG": 1.2993,
+      "DaGiG": 0.2497
+    },
+    "gnn_score": 0.9202,
+    "path_score": 0.9749,
+    "empirical_confidence": 0.9956,
+    "score_quantile_train": 0.9956,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 81,
+    "disease_id": 10,
+    "disease_name": "stomach cancer",
+    "gene_id": 7899,
+    "gene_name": "IRF1",
+    "hybrid_score": 0.9361,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 182,
+    "path_counts": {
+      "DpSpDaG": 45,
+      "DaGpPWpG": 131,
+      "DaGiG": 6
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 5.7107,
+      "DaGpPWpG": 0.2662,
+      "DaGiG": 0.2497
+    },
+    "gnn_score": 0.9161,
+    "path_score": 0.9829,
+    "empirical_confidence": 0.9956,
+    "score_quantile_train": 0.9956,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 82,
+    "disease_id": 67,
+    "disease_name": "melanoma",
+    "gene_id": 9318,
+    "gene_name": "ATM",
+    "hybrid_score": 0.9361,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 383,
+    "path_counts": {
+      "DpSpDaG": 28,
+      "DaGpPWpG": 340,
+      "DaGiG": 15
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 3.0192,
+      "DaGpPWpG": 0.8128,
+      "DaGiG": 0.7189
+    },
+    "gnn_score": 0.9451,
+    "path_score": 0.9151,
+    "empirical_confidence": 0.9956,
+    "score_quantile_train": 0.9956,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 83,
+    "disease_id": 67,
+    "disease_name": "melanoma",
+    "gene_id": 7821,
+    "gene_name": "CXCL8",
+    "hybrid_score": 0.9358,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 637,
+    "path_counts": {
+      "DpSpDaG": 83,
+      "DaGpPWpG": 546,
+      "DaGiG": 8
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 11.7269,
+      "DaGpPWpG": 1.3516,
+      "DaGiG": 0.354
+    },
+    "gnn_score": 0.9083,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9955,
+    "score_quantile_train": 0.9955,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 84,
+    "disease_id": 75,
+    "disease_name": "anemia",
+    "gene_id": 7149,
+    "gene_name": "HLA-DRB1",
+    "hybrid_score": 0.9357,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 218,
+    "path_counts": {
+      "DpSpDaG": 131,
+      "DaGpPWpG": 86,
+      "DaGiG": 1
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 19.3263,
+      "DaGpPWpG": 0.1486,
+      "DaGiG": -0.0109
+    },
+    "gnn_score": 0.9081,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9955,
+    "score_quantile_train": 0.9955,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 85,
+    "disease_id": 74,
+    "disease_name": "colon cancer",
+    "gene_id": 16861,
+    "gene_name": "CAV1",
+    "hybrid_score": 0.9347,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 504,
+    "path_counts": {
+      "DpSpDaG": 53,
+      "DaGpPWpG": 442,
+      "DaGiG": 9
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 6.9772,
+      "DaGpPWpG": 1.0796,
+      "DaGiG": 0.4061
+    },
+    "gnn_score": 0.9076,
+    "path_score": 0.9981,
+    "empirical_confidence": 0.9954,
+    "score_quantile_train": 0.9954,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 86,
+    "disease_id": 86,
+    "disease_name": "chronic obstructive pulmonary disease",
+    "gene_id": 9218,
+    "gene_name": "MYC",
+    "hybrid_score": 0.9335,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 368,
+    "path_counts": {
+      "DpSpDaG": 63,
+      "DaGpPWpG": 285,
+      "DaGiG": 20
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 8.5605,
+      "DaGpPWpG": 0.669,
+      "DaGiG": 0.9795
+    },
+    "gnn_score": 0.9052,
+    "path_score": 0.9997,
+    "empirical_confidence": 0.9952,
+    "score_quantile_train": 0.9952,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 87,
+    "disease_id": 121,
+    "disease_name": "ulcerative colitis",
+    "gene_id": 14338,
+    "gene_name": "TP53",
+    "hybrid_score": 0.933,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 494,
+    "path_counts": {
+      "DpSpDaG": 191,
+      "DaGpPWpG": 287,
+      "DaGiG": 16
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 28.8256,
+      "DaGpPWpG": 0.6742,
+      "DaGiG": 0.771
+    },
+    "gnn_score": 0.9042,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9951,
+    "score_quantile_train": 0.9951,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 88,
+    "disease_id": 80,
+    "disease_name": "kidney cancer",
+    "gene_id": 7909,
+    "gene_name": "AR",
+    "hybrid_score": 0.9322,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 131,
+    "path_counts": {
+      "DpSpDaG": 33,
+      "DaGpPWpG": 82,
+      "DaGiG": 16
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 3.8108,
+      "DaGpPWpG": 0.1381,
+      "DaGiG": 0.771
+    },
+    "gnn_score": 0.9343,
+    "path_score": 0.9273,
+    "empirical_confidence": 0.995,
+    "score_quantile_train": 0.995,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 89,
+    "disease_id": 32,
+    "disease_name": "head and neck cancer",
+    "gene_id": 7804,
+    "gene_name": "IL2",
+    "hybrid_score": 0.9321,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 373,
+    "path_counts": {
+      "DpSpDaG": 255,
+      "DaGpPWpG": 117,
+      "DaGiG": 1
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 38.9581,
+      "DaGpPWpG": 0.2296,
+      "DaGiG": -0.0109
+    },
+    "gnn_score": 0.903,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9949,
+    "score_quantile_train": 0.9949,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 90,
+    "disease_id": 47,
+    "disease_name": "lung cancer",
+    "gene_id": 8981,
+    "gene_name": "MMP2",
+    "hybrid_score": 0.9321,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 368,
+    "path_counts": {
+      "DpSpDaG": 151,
+      "DaGpPWpG": 212,
+      "DaGiG": 5
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 22.4927,
+      "DaGpPWpG": 0.4781,
+      "DaGiG": 0.1976
+    },
+    "gnn_score": 0.903,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9949,
+    "score_quantile_train": 0.9949,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 91,
+    "disease_id": 80,
+    "disease_name": "kidney cancer",
+    "gene_id": 6860,
+    "gene_name": "GSTT1",
+    "hybrid_score": 0.9319,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 178,
+    "path_counts": {
+      "DpSpDaG": 83,
+      "DaGpPWpG": 95,
+      "DaGiG": 0
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 11.7269,
+      "DaGpPWpG": 0.1721,
+      "DaGiG": -0.063
+    },
+    "gnn_score": 0.9027,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.9949,
+    "score_quantile_train": 0.9949,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 92,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 12248,
+    "gene_name": "PTGS2",
+    "hybrid_score": 0.9316,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 696,
+    "path_counts": {
+      "DpSpDaG": 206,
+      "DaGpPWpG": 462,
+      "DaGiG": 28
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 31.2004,
+      "DaGpPWpG": 1.1319,
+      "DaGiG": 1.3965
+    },
+    "gnn_score": 0.9022,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9948,
+    "score_quantile_train": 0.9948,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 93,
+    "disease_id": 78,
+    "disease_name": "hematologic cancer",
+    "gene_id": 7143,
+    "gene_name": "HLA-DQA1",
+    "hybrid_score": 0.9304,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 413,
+    "path_counts": {
+      "DpSpDaG": 36,
+      "DaGpPWpG": 373,
+      "DaGiG": 4
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 4.2858,
+      "DaGpPWpG": 0.8991,
+      "DaGiG": 0.1455
+    },
+    "gnn_score": 0.9181,
+    "path_score": 0.9592,
+    "empirical_confidence": 0.9947,
+    "score_quantile_train": 0.9947,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 94,
+    "disease_id": 13,
+    "disease_name": "hypertension",
+    "gene_id": 16861,
+    "gene_name": "CAV1",
+    "hybrid_score": 0.9301,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 655,
+    "path_counts": {
+      "DpSpDaG": 28,
+      "DaGpPWpG": 610,
+      "DaGiG": 17
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 3.0192,
+      "DaGpPWpG": 1.519,
+      "DaGiG": 0.8231
+    },
+    "gnn_score": 0.9172,
+    "path_score": 0.9604,
+    "empirical_confidence": 0.9947,
+    "score_quantile_train": 0.9947,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 95,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 10076,
+    "gene_name": "PDE4D",
+    "hybrid_score": 0.9292,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 266,
+    "path_counts": {
+      "DpSpDaG": 36,
+      "DaGpPWpG": 219,
+      "DaGiG": 11
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 4.2858,
+      "DaGpPWpG": 0.4964,
+      "DaGiG": 0.5104
+    },
+    "gnn_score": 0.917,
+    "path_score": 0.9577,
+    "empirical_confidence": 0.9946,
+    "score_quantile_train": 0.9946,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 96,
+    "disease_id": 9,
+    "disease_name": "prostate cancer",
+    "gene_id": 14243,
+    "gene_name": "TGFBR2",
+    "hybrid_score": 0.9289,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 297,
+    "path_counts": {
+      "DpSpDaG": 37,
+      "DaGpPWpG": 246,
+      "DaGiG": 14
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 4.4441,
+      "DaGpPWpG": 0.567,
+      "DaGiG": 0.6667
+    },
+    "gnn_score": 0.911,
+    "path_score": 0.9708,
+    "empirical_confidence": 0.9946,
+    "score_quantile_train": 0.9946,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 97,
+    "disease_id": 13,
+    "disease_name": "hypertension",
+    "gene_id": 14629,
+    "gene_name": "VEGFA",
+    "hybrid_score": 0.9281,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 756,
+    "path_counts": {
+      "DpSpDaG": 93,
+      "DaGpPWpG": 645,
+      "DaGiG": 18
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 13.3101,
+      "DaGpPWpG": 1.6105,
+      "DaGiG": 0.8752
+    },
+    "gnn_score": 0.8972,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9945,
+    "score_quantile_train": 0.9945,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 98,
+    "disease_id": 58,
+    "disease_name": "breast cancer",
+    "gene_id": 4060,
+    "gene_name": "ESR2",
+    "hybrid_score": 0.9279,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 297,
+    "path_counts": {
+      "DpSpDaG": 48,
+      "DaGpPWpG": 218,
+      "DaGiG": 31
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 6.1856,
+      "DaGpPWpG": 0.4938,
+      "DaGiG": 1.5529
+    },
+    "gnn_score": 0.898,
+    "path_score": 0.9977,
+    "empirical_confidence": 0.9945,
+    "score_quantile_train": 0.9945,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 99,
+    "disease_id": 124,
+    "disease_name": "psoriasis",
+    "gene_id": 6780,
+    "gene_name": "NR3C1",
+    "hybrid_score": 0.9276,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 163,
+    "path_counts": {
+      "DpSpDaG": 42,
+      "DaGpPWpG": 106,
+      "DaGiG": 15
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 5.2357,
+      "DaGpPWpG": 0.2009,
+      "DaGiG": 0.7189
+    },
+    "gnn_score": 0.9045,
+    "path_score": 0.9817,
+    "empirical_confidence": 0.9944,
+    "score_quantile_train": 0.9944,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  },
+  {
+    "rank": 100,
+    "disease_id": 47,
+    "disease_name": "lung cancer",
+    "gene_id": 7323,
+    "gene_name": "BIRC5",
+    "hybrid_score": 0.9275,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 251,
+    "path_counts": {
+      "DpSpDaG": 89,
+      "DaGpPWpG": 137,
+      "DaGiG": 25
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 12.6768,
+      "DaGpPWpG": 0.2819,
+      "DaGiG": 1.2401
+    },
+    "gnn_score": 0.8964,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9944,
+    "score_quantile_train": 0.9944,
+    "metapath_weights_used": {
+      "DpSpDaG": 3.2119,
+      "DaGpPWpG": 0.2735,
+      "DaGiG": 0.2213
+    }
+  }
+]

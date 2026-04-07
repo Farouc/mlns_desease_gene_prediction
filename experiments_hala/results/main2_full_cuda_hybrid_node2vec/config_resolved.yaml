@@ -1,0 +1,84 @@
+project_root: .
+seed: 42
+experiment:
+  results_root: experiments_hala/results
+  logs_root: experiments_hala/logs
+  figures_root: experiments_hala/figures
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  splits_dir: data/splits
+  edges_file: hetionet_subset_edges.csv
+  node_types:
+  - Disease
+  - Gene
+  - Pathway
+  - Symptom
+  disease_type: Disease
+  gene_type: Gene
+  split:
+    val_ratio: 0.1
+    test_ratio: 0.2
+    negative_ratio: 5
+graph:
+  framework: pyg
+  undirected: true
+metapaths:
+  definitions:
+    DpSpDaG:
+    - Disease
+    - Symptom
+    - Disease
+    - Gene
+    DaGpPWpG:
+    - Disease
+    - Gene
+    - Pathway
+    - Gene
+    DaGiG:
+    - Disease
+    - Gene
+    - Gene
+models:
+  run:
+    heuristics: true
+    node2vec: true
+    han: true
+  node2vec:
+    embedding_dim: 128
+    walk_length: 30
+    context_size: 10
+    walks_per_node: 10
+    num_negative_samples: 1
+    p: 1.0
+    q: 1.0
+    sparse: true
+    epochs: 50
+    batch_size: 256
+    lr: 0.01
+  han:
+    input_dim: 64
+    hidden_dim: 64
+    output_dim: 64
+    heads: 4
+    dropout: 0.2
+    lr: 0.005
+    weight_decay: 0.0001
+    batch_size: 256
+    epochs: 70
+    eval_every: 5
+  hybrid:
+    gnn_source: node2vec
+    alpha: 0.7
+    search_alpha: true
+    learn_metapath_weights: true
+    metapath_weights:
+      DaGpPpG: 1.0
+      DpPhG: 1.0
+      GcGaD: 1.0
+evaluation:
+  top_k: 10
+interpretability:
+  top_n: 100
+runtime:
+  device: cuda

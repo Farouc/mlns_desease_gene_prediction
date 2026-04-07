@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from time import perf_counter
 from typing import Any
 
 import pandas as pd
@@ -13,13 +14,13 @@ try:
 except ImportError as exc:  # pragma: no cover
     raise ImportError("PyTorch is required for HAN training") from exc
 
-from src.evaluation.metrics import compute_auc_roc
+from src.evaluation.metrics import compute_auc_pr, compute_auc_roc
 from src.models.han_model import HANLinkPredictor
 from src.training.trainer_utils import (
     build_pair_tensors,
     load_split_dataframe,
 )
-from src.utils.io import ensure_dir, save_dataframe
+from src.utils.io import ensure_dir, save_dataframe, save_json
 
 
 def _merge_scores(split_df: pd.DataFrame, score_df: pd.DataFrame) -> pd.DataFrame:
@@ -76,8 +77,11 @@ def run_han_training(
 
     epochs = int(model_config["epochs"])
     _ = int(model_config["batch_size"])
+    eval_every = int(model_config.get("eval_every", 5))
+    history_records: list[dict[str, float]] = []
 
     for epoch in tqdm(range(1, epochs + 1), desc="HAN Training", leave=False):
+        epoch_start = perf_counter()
         model.train()
         disease_idx, gene_idx, labels = build_pair_tensors(
             train_df,
@@ -97,10 +101,13 @@ def run_han_training(
         )
         loss.backward()
         optimizer.step()
+        record: dict[str, float] = {
+            "epoch": float(epoch),
+            "train_loss": float(loss.item()),
+            "epoch_seconds": float(perf_counter() - epoch_start),
+        }
 
-        if int(model_config.get("eval_every", 5)) > 0 and epoch % int(
-            model_config.get("eval_every", 5)
-        ) == 0:
+        if eval_every > 0 and epoch % eval_every == 0:
             val_scores = model.score_pairs(
                 data=data,
                 pairs_df=val_df,
@@ -114,9 +121,16 @@ def run_han_training(
                 y_true=val_df["label"].astype(int).to_numpy(),
                 y_score=val_scores["score_han"].to_numpy(),
             )
+            val_auc_pr = compute_auc_pr(
+                y_true=val_df["label"].astype(int).to_numpy(),
+                y_score=val_scores["score_han"].to_numpy(),
+            )
+            record["val_auc_roc"] = float(val_auc)
+            record["val_auc_pr"] = float(val_auc_pr)
             tqdm.write(
                 f"Epoch {epoch:03d} | loss={float(loss.item()):.4f} | val_auc={val_auc:.4f}"
             )
+        history_records.append(record)
 
     train_scores = model.score_pairs(
         data=data,
@@ -157,16 +171,43 @@ def run_han_training(
     train_path = out_dir / "han_train_predictions.csv"
     val_path = out_dir / "han_val_predictions.csv"
     test_path = out_dir / "han_test_predictions.csv"
+    history_path = out_dir / "han_training_history.csv"
+    history_summary_path = out_dir / "han_training_summary.json"
     save_dataframe(train_pred, train_path)
     save_dataframe(val_pred, val_path)
     save_dataframe(test_pred, test_path)
+    history_df = pd.DataFrame(history_records)
+    if not history_df.empty and "epoch" in history_df.columns:
+        history_df["epoch"] = history_df["epoch"].astype(int)
+    save_dataframe(history_df, history_path)
+
+    best_auc_pr = (
+        float(history_df["val_auc_pr"].max())
+        if "val_auc_pr" in history_df.columns and history_df["val_auc_pr"].notna().any()
+        else None
+    )
+    best_epoch_auc_pr = (
+        int(history_df.loc[history_df["val_auc_pr"].idxmax(), "epoch"])
+        if "val_auc_pr" in history_df.columns and history_df["val_auc_pr"].notna().any()
+        else None
+    )
+    summary = {
+        "epochs": int(epochs),
+        "eval_every": int(eval_every),
+        "best_val_auc_pr": best_auc_pr,
+        "best_val_auc_pr_epoch": best_epoch_auc_pr,
+    }
+    save_json(summary, history_summary_path)
 
     return {
         "weights_path": weights_path,
         "train_predictions": train_pred,
         "val_predictions": val_pred,
         "test_predictions": test_pred,
+        "training_history": history_df,
         "train_predictions_path": train_path,
         "val_predictions_path": val_path,
         "test_predictions_path": test_path,
+        "training_history_path": history_path,
+        "training_summary_path": history_summary_path,
     }

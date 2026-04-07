@@ -1,0 +1,3102 @@
+[
+  {
+    "rank": 1,
+    "disease_id": 58,
+    "disease_name": "58",
+    "gene_id": 3744,
+    "gene_name": "3744",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 2789,
+    "path_counts": {
+      "DpSpDaG": 247,
+      "DaGpPWpG": 2456,
+      "DaGiG": 86
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 726.2867,
+      "DaGpPWpG": 633.5276,
+      "DaGiG": 20.1875
+    },
+    "gnn_score": 34.2801,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 2,
+    "disease_id": 64,
+    "disease_name": "64",
+    "gene_id": 14338,
+    "gene_name": "14338",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1153,
+    "path_counts": {
+      "DpSpDaG": 296,
+      "DaGpPWpG": 807,
+      "DaGiG": 50
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 870.3679,
+      "DaGpPWpG": 208.1665,
+      "DaGiG": 11.7369
+    },
+    "gnn_score": 31.1927,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 3,
+    "disease_id": 121,
+    "disease_name": "121",
+    "gene_id": 14338,
+    "gene_name": "14338",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 773,
+    "path_counts": {
+      "DpSpDaG": 253,
+      "DaGpPWpG": 488,
+      "DaGiG": 32
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 743.9293,
+      "DaGpPWpG": 125.8801,
+      "DaGiG": 7.5116
+    },
+    "gnn_score": 31.4432,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 4,
+    "disease_id": 80,
+    "disease_name": "80",
+    "gene_id": 9218,
+    "gene_name": "9218",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1256,
+    "path_counts": {
+      "DpSpDaG": 237,
+      "DaGpPWpG": 968,
+      "DaGiG": 51
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 696.8824,
+      "DaGpPWpG": 249.6966,
+      "DaGiG": 11.9717
+    },
+    "gnn_score": 36.7954,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 5,
+    "disease_id": 124,
+    "disease_name": "124",
+    "gene_id": 14338,
+    "gene_name": "14338",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 814,
+    "path_counts": {
+      "DpSpDaG": 231,
+      "DaGpPWpG": 540,
+      "DaGiG": 43
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 679.2398,
+      "DaGpPWpG": 139.2935,
+      "DaGiG": 10.0938
+    },
+    "gnn_score": 30.0,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 6,
+    "disease_id": 67,
+    "disease_name": "67",
+    "gene_id": 4043,
+    "gene_name": "4043",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 3798,
+    "path_counts": {
+      "DpSpDaG": 164,
+      "DaGpPWpG": 3567,
+      "DaGiG": 67
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 482.2309,
+      "DaGpPWpG": 920.1112,
+      "DaGiG": 15.7275
+    },
+    "gnn_score": 36.6598,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9999,
+    "score_quantile_train": 0.9999,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 7,
+    "disease_id": 80,
+    "disease_name": "80",
+    "gene_id": 430,
+    "gene_name": "430",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1560,
+    "path_counts": {
+      "DpSpDaG": 156,
+      "DaGpPWpG": 1355,
+      "DaGiG": 49
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 458.7074,
+      "DaGpPWpG": 349.5236,
+      "DaGiG": 11.5022
+    },
+    "gnn_score": 32.9512,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9998,
+    "score_quantile_train": 0.9998,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 8,
+    "disease_id": 58,
+    "disease_name": "58",
+    "gene_id": 9820,
+    "gene_name": "9820",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 922,
+    "path_counts": {
+      "DpSpDaG": 96,
+      "DaGpPWpG": 617,
+      "DaGiG": 209
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 282.2815,
+      "DaGpPWpG": 159.1558,
+      "DaGiG": 49.0604
+    },
+    "gnn_score": 66.0199,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9997,
+    "score_quantile_train": 0.9997,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 9,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 9218,
+    "gene_name": "9218",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 2289,
+    "path_counts": {
+      "DpSpDaG": 114,
+      "DaGpPWpG": 2092,
+      "DaGiG": 83
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 335.2093,
+      "DaGpPWpG": 539.6335,
+      "DaGiG": 19.4833
+    },
+    "gnn_score": 42.827,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9997,
+    "score_quantile_train": 0.9997,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 10,
+    "disease_id": 67,
+    "disease_name": "67",
+    "gene_id": 13981,
+    "gene_name": "13981",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 2690,
+    "path_counts": {
+      "DpSpDaG": 104,
+      "DaGpPWpG": 2508,
+      "DaGiG": 78
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 305.8049,
+      "DaGpPWpG": 646.9411,
+      "DaGiG": 18.3096
+    },
+    "gnn_score": 39.4792,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9997,
+    "score_quantile_train": 0.9997,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 11,
+    "disease_id": 74,
+    "disease_name": "74",
+    "gene_id": 430,
+    "gene_name": "430",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1409,
+    "path_counts": {
+      "DpSpDaG": 125,
+      "DaGpPWpG": 1234,
+      "DaGiG": 50
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 367.554,
+      "DaGpPWpG": 318.3115,
+      "DaGiG": 11.7369
+    },
+    "gnn_score": 20.2875,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9996,
+    "score_quantile_train": 0.9996,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 12,
+    "disease_id": 107,
+    "disease_name": "107",
+    "gene_id": 14338,
+    "gene_name": "14338",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 743,
+    "path_counts": {
+      "DpSpDaG": 128,
+      "DaGpPWpG": 555,
+      "DaGiG": 60
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 376.3753,
+      "DaGpPWpG": 143.1628,
+      "DaGiG": 14.0843
+    },
+    "gnn_score": 39.3706,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9996,
+    "score_quantile_train": 0.9996,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 13,
+    "disease_id": 9,
+    "disease_name": "9",
+    "gene_id": 14514,
+    "gene_name": "14514",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 533,
+    "path_counts": {
+      "DpSpDaG": 114,
+      "DaGpPWpG": 325,
+      "DaGiG": 94
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 335.2093,
+      "DaGpPWpG": 83.8341,
+      "DaGiG": 22.0654
+    },
+    "gnn_score": 28.1179,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9996,
+    "score_quantile_train": 0.9996,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 14,
+    "disease_id": 55,
+    "disease_name": "55",
+    "gene_id": 14706,
+    "gene_name": "14706",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 866,
+    "path_counts": {
+      "DpSpDaG": 124,
+      "DaGpPWpG": 700,
+      "DaGiG": 42
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 364.6136,
+      "DaGpPWpG": 180.5657,
+      "DaGiG": 9.859
+    },
+    "gnn_score": 18.7537,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9996,
+    "score_quantile_train": 0.9996,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 15,
+    "disease_id": 64,
+    "disease_name": "64",
+    "gene_id": 13981,
+    "gene_name": "13981",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1604,
+    "path_counts": {
+      "DpSpDaG": 105,
+      "DaGpPWpG": 1436,
+      "DaGiG": 63
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 308.7454,
+      "DaGpPWpG": 370.4176,
+      "DaGiG": 14.7885
+    },
+    "gnn_score": 29.6126,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9996,
+    "score_quantile_train": 0.9996,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 16,
+    "disease_id": 67,
+    "disease_name": "67",
+    "gene_id": 2917,
+    "gene_name": "2917",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1603,
+    "path_counts": {
+      "DpSpDaG": 133,
+      "DaGpPWpG": 1422,
+      "DaGiG": 48
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 391.0775,
+      "DaGpPWpG": 366.8063,
+      "DaGiG": 11.2675
+    },
+    "gnn_score": 13.9134,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9995,
+    "score_quantile_train": 0.9995,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 17,
+    "disease_id": 80,
+    "disease_name": "80",
+    "gene_id": 2917,
+    "gene_name": "2917",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1249,
+    "path_counts": {
+      "DpSpDaG": 169,
+      "DaGpPWpG": 1041,
+      "DaGiG": 39
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 496.933,
+      "DaGpPWpG": 268.527,
+      "DaGiG": 9.1548
+    },
+    "gnn_score": 13.2785,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9995,
+    "score_quantile_train": 0.9995,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 18,
+    "disease_id": 9,
+    "disease_name": "9",
+    "gene_id": 4057,
+    "gene_name": "4057",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 697,
+    "path_counts": {
+      "DpSpDaG": 98,
+      "DaGpPWpG": 513,
+      "DaGiG": 86
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 288.1623,
+      "DaGpPWpG": 132.3289,
+      "DaGiG": 20.1875
+    },
+    "gnn_score": 29.4625,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 19,
+    "disease_id": 65,
+    "disease_name": "65",
+    "gene_id": 4043,
+    "gene_name": "4043",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1767,
+    "path_counts": {
+      "DpSpDaG": 143,
+      "DaGpPWpG": 1588,
+      "DaGiG": 36
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 420.4818,
+      "DaGpPWpG": 409.6262,
+      "DaGiG": 8.4506
+    },
+    "gnn_score": 13.2169,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 20,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 3982,
+    "gene_name": "3982",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 2767,
+    "path_counts": {
+      "DpSpDaG": 56,
+      "DaGpPWpG": 2595,
+      "DaGiG": 116
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 164.6642,
+      "DaGpPWpG": 669.3828,
+      "DaGiG": 27.2297
+    },
+    "gnn_score": 35.518,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 21,
+    "disease_id": 25,
+    "disease_name": "25",
+    "gene_id": 14543,
+    "gene_name": "14543",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1616,
+    "path_counts": {
+      "DpSpDaG": 11,
+      "DaGpPWpG": 1296,
+      "DaGiG": 309
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 32.3448,
+      "DaGpPWpG": 334.3045,
+      "DaGiG": 72.5342
+    },
+    "gnn_score": 120.1095,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 22,
+    "disease_id": 46,
+    "disease_name": "46",
+    "gene_id": 9218,
+    "gene_name": "9218",
+    "hybrid_score": 1.0,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 437,
+    "path_counts": {
+      "DpSpDaG": 118,
+      "DaGpPWpG": 300,
+      "DaGiG": 19
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 346.971,
+      "DaGpPWpG": 77.3853,
+      "DaGiG": 4.46
+    },
+    "gnn_score": 15.6313,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 23,
+    "disease_id": 67,
+    "disease_name": "67",
+    "gene_id": 13963,
+    "gene_name": "13963",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 704,
+    "path_counts": {
+      "DpSpDaG": 99,
+      "DaGpPWpG": 540,
+      "DaGiG": 65
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 291.1028,
+      "DaGpPWpG": 139.2935,
+      "DaGiG": 15.258
+    },
+    "gnn_score": 20.0952,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 24,
+    "disease_id": 86,
+    "disease_name": "86",
+    "gene_id": 3744,
+    "gene_name": "3744",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 814,
+    "path_counts": {
+      "DpSpDaG": 109,
+      "DaGpPWpG": 678,
+      "DaGiG": 27
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 320.5071,
+      "DaGpPWpG": 174.8908,
+      "DaGiG": 6.3379
+    },
+    "gnn_score": 23.9072,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 25,
+    "disease_id": 58,
+    "disease_name": "58",
+    "gene_id": 5245,
+    "gene_name": "5245",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1130,
+    "path_counts": {
+      "DpSpDaG": 83,
+      "DaGpPWpG": 955,
+      "DaGiG": 92
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 244.0559,
+      "DaGpPWpG": 246.3432,
+      "DaGiG": 21.596
+    },
+    "gnn_score": 34.7466,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 26,
+    "disease_id": 12,
+    "disease_name": "12",
+    "gene_id": 3982,
+    "gene_name": "3982",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1307,
+    "path_counts": {
+      "DpSpDaG": 96,
+      "DaGpPWpG": 1169,
+      "DaGiG": 42
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 282.2815,
+      "DaGpPWpG": 301.5447,
+      "DaGiG": 9.859
+    },
+    "gnn_score": 30.2658,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 27,
+    "disease_id": 9,
+    "disease_name": "9",
+    "gene_id": 2917,
+    "gene_name": "2917",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1507,
+    "path_counts": {
+      "DpSpDaG": 110,
+      "DaGpPWpG": 1346,
+      "DaGiG": 51
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 323.4475,
+      "DaGpPWpG": 347.202,
+      "DaGiG": 11.9717
+    },
+    "gnn_score": 12.3886,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 28,
+    "disease_id": 58,
+    "disease_name": "58",
+    "gene_id": 14034,
+    "gene_name": "14034",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 2093,
+    "path_counts": {
+      "DpSpDaG": 200,
+      "DaGpPWpG": 1821,
+      "DaGiG": 72
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 588.0864,
+      "DaGpPWpG": 469.7288,
+      "DaGiG": 16.9012
+    },
+    "gnn_score": 12.0192,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 29,
+    "disease_id": 67,
+    "disease_name": "67",
+    "gene_id": 16012,
+    "gene_name": "16012",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1115,
+    "path_counts": {
+      "DpSpDaG": 156,
+      "DaGpPWpG": 901,
+      "DaGiG": 58
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 458.7074,
+      "DaGpPWpG": 232.4138,
+      "DaGiG": 13.6148
+    },
+    "gnn_score": 11.8845,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9994,
+    "score_quantile_train": 0.9994,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 30,
+    "disease_id": 12,
+    "disease_name": "12",
+    "gene_id": 16012,
+    "gene_name": "16012",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 792,
+    "path_counts": {
+      "DpSpDaG": 112,
+      "DaGpPWpG": 634,
+      "DaGiG": 46
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 329.3284,
+      "DaGpPWpG": 163.5409,
+      "DaGiG": 10.798
+    },
+    "gnn_score": 11.2588,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9993,
+    "score_quantile_train": 0.9993,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 31,
+    "disease_id": 13,
+    "disease_name": "13",
+    "gene_id": 13981,
+    "gene_name": "13981",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 2024,
+    "path_counts": {
+      "DpSpDaG": 66,
+      "DaGpPWpG": 1894,
+      "DaGiG": 64
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 194.0685,
+      "DaGpPWpG": 488.5592,
+      "DaGiG": 15.0233
+    },
+    "gnn_score": 28.2244,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9993,
+    "score_quantile_train": 0.9993,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 32,
+    "disease_id": 99,
+    "disease_name": "99",
+    "gene_id": 356,
+    "gene_name": "356",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 420,
+    "path_counts": {
+      "DpSpDaG": 99,
+      "DaGpPWpG": 294,
+      "DaGiG": 27
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 291.1028,
+      "DaGpPWpG": 75.8376,
+      "DaGiG": 6.3379
+    },
+    "gnn_score": 18.9825,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9993,
+    "score_quantile_train": 0.9993,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 33,
+    "disease_id": 9,
+    "disease_name": "9",
+    "gene_id": 9820,
+    "gene_name": "9820",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 589,
+    "path_counts": {
+      "DpSpDaG": 62,
+      "DaGpPWpG": 394,
+      "DaGiG": 133
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 182.3068,
+      "DaGpPWpG": 101.6327,
+      "DaGiG": 31.2202
+    },
+    "gnn_score": 42.7533,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9993,
+    "score_quantile_train": 0.9993,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 34,
+    "disease_id": 121,
+    "disease_name": "121",
+    "gene_id": 4036,
+    "gene_name": "4036",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 927,
+    "path_counts": {
+      "DpSpDaG": 114,
+      "DaGpPWpG": 785,
+      "DaGiG": 28
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 335.2093,
+      "DaGpPWpG": 202.4915,
+      "DaGiG": 6.5727
+    },
+    "gnn_score": 10.1902,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9992,
+    "score_quantile_train": 0.9992,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 35,
+    "disease_id": 122,
+    "disease_name": "122",
+    "gene_id": 14034,
+    "gene_name": "14034",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 964,
+    "path_counts": {
+      "DpSpDaG": 162,
+      "DaGpPWpG": 778,
+      "DaGiG": 24
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 476.35,
+      "DaGpPWpG": 200.6859,
+      "DaGiG": 5.6337
+    },
+    "gnn_score": 10.1256,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9992,
+    "score_quantile_train": 0.9992,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 36,
+    "disease_id": 13,
+    "disease_name": "13",
+    "gene_id": 3982,
+    "gene_name": "3982",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1627,
+    "path_counts": {
+      "DpSpDaG": 67,
+      "DaGpPWpG": 1511,
+      "DaGiG": 49
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 197.009,
+      "DaGpPWpG": 389.764,
+      "DaGiG": 11.5022
+    },
+    "gnn_score": 21.824,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.9991,
+    "score_quantile_train": 0.9991,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 37,
+    "disease_id": 55,
+    "disease_name": "55",
+    "gene_id": 9411,
+    "gene_name": "9411",
+    "hybrid_score": 1.0,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 311,
+    "path_counts": {
+      "DpSpDaG": 75,
+      "DaGpPWpG": 155,
+      "DaGiG": 81
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 220.5324,
+      "DaGpPWpG": 39.9824,
+      "DaGiG": 19.0138
+    },
+    "gnn_score": 35.0593,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.9991,
+    "score_quantile_train": 0.9991,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 38,
+    "disease_id": 9,
+    "disease_name": "9",
+    "gene_id": 4036,
+    "gene_name": "4036",
+    "hybrid_score": 0.9999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1617,
+    "path_counts": {
+      "DpSpDaG": 112,
+      "DaGpPWpG": 1455,
+      "DaGiG": 50
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 329.3284,
+      "DaGpPWpG": 375.3187,
+      "DaGiG": 11.7369
+    },
+    "gnn_score": 9.4493,
+    "path_score": 1.0,
+    "empirical_confidence": 0.999,
+    "score_quantile_train": 0.999,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 39,
+    "disease_id": 124,
+    "disease_name": "124",
+    "gene_id": 9820,
+    "gene_name": "9820",
+    "hybrid_score": 0.9999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 381,
+    "path_counts": {
+      "DpSpDaG": 72,
+      "DaGpPWpG": 228,
+      "DaGiG": 81
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 211.7111,
+      "DaGpPWpG": 58.8128,
+      "DaGiG": 19.0138
+    },
+    "gnn_score": 41.1672,
+    "path_score": 0.9998,
+    "empirical_confidence": 0.999,
+    "score_quantile_train": 0.999,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 40,
+    "disease_id": 12,
+    "disease_name": "12",
+    "gene_id": 3744,
+    "gene_name": "3744",
+    "hybrid_score": 0.9999,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1121,
+    "path_counts": {
+      "DpSpDaG": 72,
+      "DaGpPWpG": 1003,
+      "DaGiG": 46
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 211.7111,
+      "DaGpPWpG": 258.7248,
+      "DaGiG": 10.798
+    },
+    "gnn_score": 26.8979,
+    "path_score": 0.9998,
+    "empirical_confidence": 0.999,
+    "score_quantile_train": 0.999,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 41,
+    "disease_id": 65,
+    "disease_name": "65",
+    "gene_id": 7959,
+    "gene_name": "7959",
+    "hybrid_score": 0.9999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1105,
+    "path_counts": {
+      "DpSpDaG": 81,
+      "DaGpPWpG": 997,
+      "DaGiG": 27
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 238.175,
+      "DaGpPWpG": 257.1771,
+      "DaGiG": 6.3379
+    },
+    "gnn_score": 10.0732,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.999,
+    "score_quantile_train": 0.999,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 42,
+    "disease_id": 86,
+    "disease_name": "86",
+    "gene_id": 9218,
+    "gene_name": "9218",
+    "hybrid_score": 0.9999,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 528,
+    "path_counts": {
+      "DpSpDaG": 83,
+      "DaGpPWpG": 418,
+      "DaGiG": 27
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 244.0559,
+      "DaGpPWpG": 107.8235,
+      "DaGiG": 6.3379
+    },
+    "gnn_score": 27.3685,
+    "path_score": 0.9998,
+    "empirical_confidence": 0.9989,
+    "score_quantile_train": 0.9989,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 43,
+    "disease_id": 67,
+    "disease_name": "67",
+    "gene_id": 341,
+    "gene_name": "341",
+    "hybrid_score": 0.9999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1016,
+    "path_counts": {
+      "DpSpDaG": 62,
+      "DaGpPWpG": 889,
+      "DaGiG": 65
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 182.3068,
+      "DaGpPWpG": 229.3184,
+      "DaGiG": 15.258
+    },
+    "gnn_score": 33.1724,
+    "path_score": 0.9997,
+    "empirical_confidence": 0.9989,
+    "score_quantile_train": 0.9989,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 44,
+    "disease_id": 58,
+    "disease_name": "58",
+    "gene_id": 6263,
+    "gene_name": "6263",
+    "hybrid_score": 0.9999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 935,
+    "path_counts": {
+      "DpSpDaG": 63,
+      "DaGpPWpG": 806,
+      "DaGiG": 66
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 185.2472,
+      "DaGpPWpG": 207.9085,
+      "DaGiG": 15.4927
+    },
+    "gnn_score": 12.7706,
+    "path_score": 0.9997,
+    "empirical_confidence": 0.9989,
+    "score_quantile_train": 0.9989,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 45,
+    "disease_id": 46,
+    "disease_name": "46",
+    "gene_id": 4057,
+    "gene_name": "4057",
+    "hybrid_score": 0.9999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 257,
+    "path_counts": {
+      "DpSpDaG": 83,
+      "DaGpPWpG": 145,
+      "DaGiG": 29
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 244.0559,
+      "DaGpPWpG": 37.4029,
+      "DaGiG": 6.8074
+    },
+    "gnn_score": 15.3577,
+    "path_score": 0.9996,
+    "empirical_confidence": 0.9988,
+    "score_quantile_train": 0.9988,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 46,
+    "disease_id": 107,
+    "disease_name": "107",
+    "gene_id": 4036,
+    "gene_name": "4036",
+    "hybrid_score": 0.9999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 806,
+    "path_counts": {
+      "DpSpDaG": 80,
+      "DaGpPWpG": 696,
+      "DaGiG": 30
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 235.2346,
+      "DaGpPWpG": 179.5339,
+      "DaGiG": 7.0422
+    },
+    "gnn_score": 9.2825,
+    "path_score": 0.9998,
+    "empirical_confidence": 0.9988,
+    "score_quantile_train": 0.9988,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 47,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 356,
+    "gene_name": "356",
+    "hybrid_score": 0.9999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1097,
+    "path_counts": {
+      "DpSpDaG": 53,
+      "DaGpPWpG": 960,
+      "DaGiG": 84
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 155.8429,
+      "DaGpPWpG": 247.633,
+      "DaGiG": 19.718
+    },
+    "gnn_score": 29.1738,
+    "path_score": 0.9996,
+    "empirical_confidence": 0.9988,
+    "score_quantile_train": 0.9988,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 48,
+    "disease_id": 55,
+    "disease_name": "55",
+    "gene_id": 5276,
+    "gene_name": "5276",
+    "hybrid_score": 0.9999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1151,
+    "path_counts": {
+      "DpSpDaG": 87,
+      "DaGpPWpG": 1044,
+      "DaGiG": 20
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 255.8176,
+      "DaGpPWpG": 269.3008,
+      "DaGiG": 4.6948
+    },
+    "gnn_score": 8.6961,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.9988,
+    "score_quantile_train": 0.9988,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 49,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 2434,
+    "gene_name": "2434",
+    "hybrid_score": 0.9999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 3684,
+    "path_counts": {
+      "DpSpDaG": 29,
+      "DaGpPWpG": 3609,
+      "DaGiG": 46
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 85.2725,
+      "DaGpPWpG": 930.9451,
+      "DaGiG": 10.798
+    },
+    "gnn_score": 9.9756,
+    "path_score": 0.9997,
+    "empirical_confidence": 0.9988,
+    "score_quantile_train": 0.9988,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 50,
+    "disease_id": 58,
+    "disease_name": "58",
+    "gene_id": 4948,
+    "gene_name": "4948",
+    "hybrid_score": 0.9999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 177,
+    "path_counts": {
+      "DpSpDaG": 53,
+      "DaGpPWpG": 0,
+      "DaGiG": 124
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 155.8429,
+      "DaGpPWpG": 0.0,
+      "DaGiG": 29.1076
+    },
+    "gnn_score": 31.0473,
+    "path_score": 0.9996,
+    "empirical_confidence": 0.9988,
+    "score_quantile_train": 0.9988,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 51,
+    "disease_id": 116,
+    "disease_name": "116",
+    "gene_id": 7800,
+    "gene_name": "7800",
+    "hybrid_score": 0.9998,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 985,
+    "path_counts": {
+      "DpSpDaG": 273,
+      "DaGpPWpG": 688,
+      "DaGiG": 24
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 802.738,
+      "DaGpPWpG": 177.4703,
+      "DaGiG": 5.6337
+    },
+    "gnn_score": 8.3397,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9987,
+    "score_quantile_train": 0.9987,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 52,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 5276,
+    "gene_name": "5276",
+    "hybrid_score": 0.9998,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 3586,
+    "path_counts": {
+      "DpSpDaG": 24,
+      "DaGpPWpG": 3507,
+      "DaGiG": 55
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 70.5704,
+      "DaGpPWpG": 904.6341,
+      "DaGiG": 12.9106
+    },
+    "gnn_score": 11.5178,
+    "path_score": 0.9995,
+    "empirical_confidence": 0.9987,
+    "score_quantile_train": 0.9987,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 53,
+    "disease_id": 107,
+    "disease_name": "107",
+    "gene_id": 5040,
+    "gene_name": "5040",
+    "hybrid_score": 0.9998,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 649,
+    "path_counts": {
+      "DpSpDaG": 73,
+      "DaGpPWpG": 543,
+      "DaGiG": 33
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 214.6515,
+      "DaGpPWpG": 140.0674,
+      "DaGiG": 7.7464
+    },
+    "gnn_score": 13.0952,
+    "path_score": 0.9995,
+    "empirical_confidence": 0.9987,
+    "score_quantile_train": 0.9987,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 54,
+    "disease_id": 64,
+    "disease_name": "64",
+    "gene_id": 9427,
+    "gene_name": "9427",
+    "hybrid_score": 0.9998,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 666,
+    "path_counts": {
+      "DpSpDaG": 92,
+      "DaGpPWpG": 535,
+      "DaGiG": 39
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 270.5198,
+      "DaGpPWpG": 138.0038,
+      "DaGiG": 9.1548
+    },
+    "gnn_score": 8.2369,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9987,
+    "score_quantile_train": 0.9987,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 55,
+    "disease_id": 67,
+    "disease_name": "67",
+    "gene_id": 12708,
+    "gene_name": "12708",
+    "hybrid_score": 0.9998,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 911,
+    "path_counts": {
+      "DpSpDaG": 105,
+      "DaGpPWpG": 766,
+      "DaGiG": 40
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 308.7454,
+      "DaGpPWpG": 197.5905,
+      "DaGiG": 9.3895
+    },
+    "gnn_score": 7.9973,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9986,
+    "score_quantile_train": 0.9986,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 56,
+    "disease_id": 116,
+    "disease_name": "116",
+    "gene_id": 4900,
+    "gene_name": "4900",
+    "hybrid_score": 0.9997,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 621,
+    "path_counts": {
+      "DpSpDaG": 120,
+      "DaGpPWpG": 467,
+      "DaGiG": 34
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 352.8519,
+      "DaGpPWpG": 120.4631,
+      "DaGiG": 7.9811
+    },
+    "gnn_score": 7.7367,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9985,
+    "score_quantile_train": 0.9985,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 57,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 11717,
+    "gene_name": "11717",
+    "hybrid_score": 0.9997,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 5379,
+    "path_counts": {
+      "DpSpDaG": 70,
+      "DaGpPWpG": 5259,
+      "DaGiG": 50
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 205.8302,
+      "DaGpPWpG": 1356.5643,
+      "DaGiG": 11.7369
+    },
+    "gnn_score": 7.7273,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9985,
+    "score_quantile_train": 0.9985,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 58,
+    "disease_id": 107,
+    "disease_name": "107",
+    "gene_id": 10562,
+    "gene_name": "10562",
+    "hybrid_score": 0.9997,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 429,
+    "path_counts": {
+      "DpSpDaG": 80,
+      "DaGpPWpG": 322,
+      "DaGiG": 27
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 235.2346,
+      "DaGpPWpG": 83.0602,
+      "DaGiG": 6.3379
+    },
+    "gnn_score": 8.2044,
+    "path_score": 0.9996,
+    "empirical_confidence": 0.9984,
+    "score_quantile_train": 0.9984,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 59,
+    "disease_id": 58,
+    "disease_name": "58",
+    "gene_id": 1113,
+    "gene_name": "1113",
+    "hybrid_score": 0.9997,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 869,
+    "path_counts": {
+      "DpSpDaG": 48,
+      "DaGpPWpG": 735,
+      "DaGiG": 86
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 141.1407,
+      "DaGpPWpG": 189.594,
+      "DaGiG": 20.1875
+    },
+    "gnn_score": 12.4104,
+    "path_score": 0.9991,
+    "empirical_confidence": 0.9984,
+    "score_quantile_train": 0.9984,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 60,
+    "disease_id": 58,
+    "disease_name": "58",
+    "gene_id": 12248,
+    "gene_name": "12248",
+    "hybrid_score": 0.9996,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 929,
+    "path_counts": {
+      "DpSpDaG": 277,
+      "DaGpPWpG": 615,
+      "DaGiG": 37
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 814.4997,
+      "DaGpPWpG": 158.6399,
+      "DaGiG": 8.6853
+    },
+    "gnn_score": 7.5152,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9983,
+    "score_quantile_train": 0.9983,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 61,
+    "disease_id": 80,
+    "disease_name": "80",
+    "gene_id": 18337,
+    "gene_name": "18337",
+    "hybrid_score": 0.9996,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1614,
+    "path_counts": {
+      "DpSpDaG": 53,
+      "DaGpPWpG": 1530,
+      "DaGiG": 31
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 155.8429,
+      "DaGpPWpG": 394.665,
+      "DaGiG": 7.2769
+    },
+    "gnn_score": 10.7424,
+    "path_score": 0.9989,
+    "empirical_confidence": 0.9982,
+    "score_quantile_train": 0.9982,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 62,
+    "disease_id": 80,
+    "disease_name": "80",
+    "gene_id": 8556,
+    "gene_name": "8556",
+    "hybrid_score": 0.9996,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 330,
+    "path_counts": {
+      "DpSpDaG": 86,
+      "DaGpPWpG": 213,
+      "DaGiG": 31
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 252.8772,
+      "DaGpPWpG": 54.9436,
+      "DaGiG": 7.2769
+    },
+    "gnn_score": 7.5484,
+    "path_score": 0.9998,
+    "empirical_confidence": 0.9982,
+    "score_quantile_train": 0.9982,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 63,
+    "disease_id": 55,
+    "disease_name": "55",
+    "gene_id": 7175,
+    "gene_name": "7175",
+    "hybrid_score": 0.9996,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 346,
+    "path_counts": {
+      "DpSpDaG": 127,
+      "DaGpPWpG": 182,
+      "DaGiG": 37
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 373.4349,
+      "DaGpPWpG": 46.9471,
+      "DaGiG": 8.6853
+    },
+    "gnn_score": 7.3486,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9982,
+    "score_quantile_train": 0.9982,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 64,
+    "disease_id": 99,
+    "disease_name": "99",
+    "gene_id": 11716,
+    "gene_name": "11716",
+    "hybrid_score": 0.9996,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1391,
+    "path_counts": {
+      "DpSpDaG": 90,
+      "DaGpPWpG": 1296,
+      "DaGiG": 5
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 264.6389,
+      "DaGpPWpG": 334.3045,
+      "DaGiG": 1.1737
+    },
+    "gnn_score": 7.358,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.9982,
+    "score_quantile_train": 0.9982,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 65,
+    "disease_id": 65,
+    "disease_name": "65",
+    "gene_id": 3577,
+    "gene_name": "3577",
+    "hybrid_score": 0.9996,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 403,
+    "path_counts": {
+      "DpSpDaG": 125,
+      "DaGpPWpG": 259,
+      "DaGiG": 19
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 367.554,
+      "DaGpPWpG": 66.8093,
+      "DaGiG": 4.46
+    },
+    "gnn_score": 7.3041,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9982,
+    "score_quantile_train": 0.9982,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 66,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 7381,
+    "gene_name": "7381",
+    "hybrid_score": 0.9996,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 834,
+    "path_counts": {
+      "DpSpDaG": 69,
+      "DaGpPWpG": 701,
+      "DaGiG": 64
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 202.8898,
+      "DaGpPWpG": 180.8236,
+      "DaGiG": 15.0233
+    },
+    "gnn_score": 7.4531,
+    "path_score": 0.9998,
+    "empirical_confidence": 0.9982,
+    "score_quantile_train": 0.9982,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 67,
+    "disease_id": 58,
+    "disease_name": "58",
+    "gene_id": 14236,
+    "gene_name": "14236",
+    "hybrid_score": 0.9995,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1677,
+    "path_counts": {
+      "DpSpDaG": 181,
+      "DaGpPWpG": 1459,
+      "DaGiG": 37
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 532.2182,
+      "DaGpPWpG": 376.3505,
+      "DaGiG": 8.6853
+    },
+    "gnn_score": 7.2151,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9981,
+    "score_quantile_train": 0.9981,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 68,
+    "disease_id": 12,
+    "disease_name": "12",
+    "gene_id": 8909,
+    "gene_name": "8909",
+    "hybrid_score": 0.9994,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 732,
+    "path_counts": {
+      "DpSpDaG": 92,
+      "DaGpPWpG": 605,
+      "DaGiG": 35
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 270.5198,
+      "DaGpPWpG": 156.0604,
+      "DaGiG": 8.2159
+    },
+    "gnn_score": 7.0873,
+    "path_score": 1.0,
+    "empirical_confidence": 0.998,
+    "score_quantile_train": 0.998,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 69,
+    "disease_id": 12,
+    "disease_name": "12",
+    "gene_id": 3632,
+    "gene_name": "3632",
+    "hybrid_score": 0.9994,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 245,
+    "path_counts": {
+      "DpSpDaG": 65,
+      "DaGpPWpG": 133,
+      "DaGiG": 47
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 191.1281,
+      "DaGpPWpG": 34.3075,
+      "DaGiG": 11.0327
+    },
+    "gnn_score": 12.4365,
+    "path_score": 0.9984,
+    "empirical_confidence": 0.998,
+    "score_quantile_train": 0.998,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 70,
+    "disease_id": 80,
+    "disease_name": "80",
+    "gene_id": 13996,
+    "gene_name": "13996",
+    "hybrid_score": 0.9994,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 808,
+    "path_counts": {
+      "DpSpDaG": 139,
+      "DaGpPWpG": 643,
+      "DaGiG": 26
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 408.7201,
+      "DaGpPWpG": 165.8625,
+      "DaGiG": 6.1032
+    },
+    "gnn_score": 7.0347,
+    "path_score": 1.0,
+    "empirical_confidence": 0.998,
+    "score_quantile_train": 0.998,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 71,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 10388,
+    "gene_name": "10388",
+    "hybrid_score": 0.9994,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 4722,
+    "path_counts": {
+      "DpSpDaG": 98,
+      "DaGpPWpG": 4587,
+      "DaGiG": 37
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 288.1623,
+      "DaGpPWpG": 1183.2212,
+      "DaGiG": 8.6853
+    },
+    "gnn_score": 7.0128,
+    "path_score": 1.0,
+    "empirical_confidence": 0.998,
+    "score_quantile_train": 0.998,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 72,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 7324,
+    "gene_name": "7324",
+    "hybrid_score": 0.9994,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 1871,
+    "path_counts": {
+      "DpSpDaG": 26,
+      "DaGpPWpG": 1752,
+      "DaGiG": 93
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 76.4512,
+      "DaGpPWpG": 451.9301,
+      "DaGiG": 21.8307
+    },
+    "gnn_score": 39.2959,
+    "path_score": 0.9983,
+    "empirical_confidence": 0.9979,
+    "score_quantile_train": 0.9979,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 73,
+    "disease_id": 67,
+    "disease_name": "67",
+    "gene_id": 6263,
+    "gene_name": "6263",
+    "hybrid_score": 0.9994,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 832,
+    "path_counts": {
+      "DpSpDaG": 56,
+      "DaGpPWpG": 730,
+      "DaGiG": 46
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 164.6642,
+      "DaGpPWpG": 188.3042,
+      "DaGiG": 10.798
+    },
+    "gnn_score": 12.9103,
+    "path_score": 0.9983,
+    "empirical_confidence": 0.9979,
+    "score_quantile_train": 0.9979,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 74,
+    "disease_id": 80,
+    "disease_name": "80",
+    "gene_id": 11717,
+    "gene_name": "11717",
+    "hybrid_score": 0.9994,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 2323,
+    "path_counts": {
+      "DpSpDaG": 125,
+      "DaGpPWpG": 2181,
+      "DaGiG": 17
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 367.554,
+      "DaGpPWpG": 562.5911,
+      "DaGiG": 3.9906
+    },
+    "gnn_score": 6.9436,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9979,
+    "score_quantile_train": 0.9979,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 75,
+    "disease_id": 80,
+    "disease_name": "80",
+    "gene_id": 14629,
+    "gene_name": "14629",
+    "hybrid_score": 0.9994,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 886,
+    "path_counts": {
+      "DpSpDaG": 248,
+      "DaGpPWpG": 618,
+      "DaGiG": 20
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 729.2272,
+      "DaGpPWpG": 159.4137,
+      "DaGiG": 4.6948
+    },
+    "gnn_score": 6.9136,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9979,
+    "score_quantile_train": 0.9979,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 76,
+    "disease_id": 64,
+    "disease_name": "64",
+    "gene_id": 10388,
+    "gene_name": "10388",
+    "hybrid_score": 0.9993,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 2020,
+    "path_counts": {
+      "DpSpDaG": 171,
+      "DaGpPWpG": 1825,
+      "DaGiG": 24
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 502.8139,
+      "DaGpPWpG": 470.7606,
+      "DaGiG": 5.6337
+    },
+    "gnn_score": 6.8106,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9978,
+    "score_quantile_train": 0.9978,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 77,
+    "disease_id": 58,
+    "disease_name": "58",
+    "gene_id": 4952,
+    "gene_name": "4952",
+    "hybrid_score": 0.9993,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 622,
+    "path_counts": {
+      "DpSpDaG": 62,
+      "DaGpPWpG": 499,
+      "DaGiG": 61
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 182.3068,
+      "DaGpPWpG": 128.7175,
+      "DaGiG": 14.3191
+    },
+    "gnn_score": 7.1641,
+    "path_score": 0.9993,
+    "empirical_confidence": 0.9978,
+    "score_quantile_train": 0.9978,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 78,
+    "disease_id": 107,
+    "disease_name": "107",
+    "gene_id": 3632,
+    "gene_name": "3632",
+    "hybrid_score": 0.9992,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 199,
+    "path_counts": {
+      "DpSpDaG": 66,
+      "DaGpPWpG": 95,
+      "DaGiG": 38
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 194.0685,
+      "DaGpPWpG": 24.5053,
+      "DaGiG": 8.9201
+    },
+    "gnn_score": 13.0192,
+    "path_score": 0.9979,
+    "empirical_confidence": 0.9978,
+    "score_quantile_train": 0.9978,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 79,
+    "disease_id": 13,
+    "disease_name": "13",
+    "gene_id": 14629,
+    "gene_name": "14629",
+    "hybrid_score": 0.9992,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1110,
+    "path_counts": {
+      "DpSpDaG": 152,
+      "DaGpPWpG": 931,
+      "DaGiG": 27
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 446.9457,
+      "DaGpPWpG": 240.1524,
+      "DaGiG": 6.3379
+    },
+    "gnn_score": 6.7294,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9977,
+    "score_quantile_train": 0.9977,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 80,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 7804,
+    "gene_name": "7804",
+    "hybrid_score": 0.9992,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1550,
+    "path_counts": {
+      "DpSpDaG": 139,
+      "DaGpPWpG": 1397,
+      "DaGiG": 14
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 408.7201,
+      "DaGpPWpG": 360.3575,
+      "DaGiG": 3.2863
+    },
+    "gnn_score": 6.7091,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9976,
+    "score_quantile_train": 0.9976,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 81,
+    "disease_id": 38,
+    "disease_name": "38",
+    "gene_id": 7133,
+    "gene_name": "7133",
+    "hybrid_score": 0.9992,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 324,
+    "path_counts": {
+      "DpSpDaG": 96,
+      "DaGpPWpG": 212,
+      "DaGiG": 16
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 282.2815,
+      "DaGpPWpG": 54.6856,
+      "DaGiG": 3.7558
+    },
+    "gnn_score": 6.7383,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.9976,
+    "score_quantile_train": 0.9976,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 82,
+    "disease_id": 86,
+    "disease_name": "86",
+    "gene_id": 12248,
+    "gene_name": "12248",
+    "hybrid_score": 0.9992,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 429,
+    "path_counts": {
+      "DpSpDaG": 128,
+      "DaGpPWpG": 283,
+      "DaGiG": 18
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 376.3753,
+      "DaGpPWpG": 73.0001,
+      "DaGiG": 4.2253
+    },
+    "gnn_score": 6.6693,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9976,
+    "score_quantile_train": 0.9976,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 83,
+    "disease_id": 122,
+    "disease_name": "122",
+    "gene_id": 12248,
+    "gene_name": "12248",
+    "hybrid_score": 0.9991,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 516,
+    "path_counts": {
+      "DpSpDaG": 242,
+      "DaGpPWpG": 263,
+      "DaGiG": 11
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 711.5846,
+      "DaGpPWpG": 67.8411,
+      "DaGiG": 2.5821
+    },
+    "gnn_score": 6.6295,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9975,
+    "score_quantile_train": 0.9975,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 84,
+    "disease_id": 9,
+    "disease_name": "9",
+    "gene_id": 8165,
+    "gene_name": "8165",
+    "hybrid_score": 0.9991,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 2185,
+    "path_counts": {
+      "DpSpDaG": 154,
+      "DaGpPWpG": 2012,
+      "DaGiG": 19
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 452.8265,
+      "DaGpPWpG": 518.9974,
+      "DaGiG": 4.46
+    },
+    "gnn_score": 6.6164,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9975,
+    "score_quantile_train": 0.9975,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 85,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 14540,
+    "gene_name": "14540",
+    "hybrid_score": 0.9991,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 3499,
+    "path_counts": {
+      "DpSpDaG": 13,
+      "DaGpPWpG": 3437,
+      "DaGiG": 49
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 38.2256,
+      "DaGpPWpG": 886.5776,
+      "DaGiG": 11.5022
+    },
+    "gnn_score": 12.1538,
+    "path_score": 0.9975,
+    "empirical_confidence": 0.9975,
+    "score_quantile_train": 0.9975,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 86,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 7954,
+    "gene_name": "7954",
+    "hybrid_score": 0.9991,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 3894,
+    "path_counts": {
+      "DpSpDaG": 24,
+      "DaGpPWpG": 3825,
+      "DaGiG": 45
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 70.5704,
+      "DaGpPWpG": 986.6626,
+      "DaGiG": 10.5632
+    },
+    "gnn_score": 6.7102,
+    "path_score": 0.9996,
+    "empirical_confidence": 0.9974,
+    "score_quantile_train": 0.9974,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 87,
+    "disease_id": 104,
+    "disease_name": "104",
+    "gene_id": 14338,
+    "gene_name": "14338",
+    "hybrid_score": 0.9991,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 813,
+    "path_counts": {
+      "DpSpDaG": 299,
+      "DaGpPWpG": 487,
+      "DaGiG": 27
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 879.1892,
+      "DaGpPWpG": 125.6221,
+      "DaGiG": 6.3379
+    },
+    "gnn_score": 6.5476,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9974,
+    "score_quantile_train": 0.9974,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 88,
+    "disease_id": 67,
+    "disease_name": "67",
+    "gene_id": 10388,
+    "gene_name": "10388",
+    "hybrid_score": 0.999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 3316,
+    "path_counts": {
+      "DpSpDaG": 153,
+      "DaGpPWpG": 3140,
+      "DaGiG": 23
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 449.8861,
+      "DaGpPWpG": 809.9661,
+      "DaGiG": 5.399
+    },
+    "gnn_score": 6.5064,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9973,
+    "score_quantile_train": 0.9973,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 89,
+    "disease_id": 58,
+    "disease_name": "58",
+    "gene_id": 4426,
+    "gene_name": "4426",
+    "hybrid_score": 0.999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 433,
+    "path_counts": {
+      "DpSpDaG": 51,
+      "DaGpPWpG": 314,
+      "DaGiG": 68
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 149.962,
+      "DaGpPWpG": 80.9966,
+      "DaGiG": 15.9622
+    },
+    "gnn_score": 11.9286,
+    "path_score": 0.9972,
+    "empirical_confidence": 0.9973,
+    "score_quantile_train": 0.9973,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 90,
+    "disease_id": 13,
+    "disease_name": "13",
+    "gene_id": 4084,
+    "gene_name": "4084",
+    "hybrid_score": 0.999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 733,
+    "path_counts": {
+      "DpSpDaG": 145,
+      "DaGpPWpG": 575,
+      "DaGiG": 13
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 426.3627,
+      "DaGpPWpG": 148.3218,
+      "DaGiG": 3.0516
+    },
+    "gnn_score": 6.4825,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9973,
+    "score_quantile_train": 0.9973,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 91,
+    "disease_id": 113,
+    "disease_name": "113",
+    "gene_id": 7133,
+    "gene_name": "7133",
+    "hybrid_score": 0.999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 620,
+    "path_counts": {
+      "DpSpDaG": 110,
+      "DaGpPWpG": 486,
+      "DaGiG": 24
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 323.4475,
+      "DaGpPWpG": 125.3642,
+      "DaGiG": 5.6337
+    },
+    "gnn_score": 6.4671,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9973,
+    "score_quantile_train": 0.9973,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 92,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 7323,
+    "gene_name": "7323",
+    "hybrid_score": 0.999,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 545,
+    "path_counts": {
+      "DpSpDaG": 78,
+      "DaGpPWpG": 396,
+      "DaGiG": 71
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 229.3537,
+      "DaGpPWpG": 102.1486,
+      "DaGiG": 16.6664
+    },
+    "gnn_score": 6.4697,
+    "path_score": 0.9999,
+    "empirical_confidence": 0.9973,
+    "score_quantile_train": 0.9973,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 93,
+    "disease_id": 10,
+    "disease_name": "10",
+    "gene_id": 7959,
+    "gene_name": "7959",
+    "hybrid_score": 0.9989,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 1262,
+    "path_counts": {
+      "DpSpDaG": 111,
+      "DaGpPWpG": 1127,
+      "DaGiG": 24
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 326.388,
+      "DaGpPWpG": 290.7108,
+      "DaGiG": 5.6337
+    },
+    "gnn_score": 6.3994,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9972,
+    "score_quantile_train": 0.9972,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 94,
+    "disease_id": 64,
+    "disease_name": "64",
+    "gene_id": 11716,
+    "gene_name": "11716",
+    "hybrid_score": 0.9989,
+    "label": 0,
+    "is_known_link": false,
+    "top_metapath": "DaGpPWpG",
+    "total_path_evidence": 2118,
+    "path_counts": {
+      "DpSpDaG": 63,
+      "DaGpPWpG": 2032,
+      "DaGiG": 23
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 185.2472,
+      "DaGpPWpG": 524.1564,
+      "DaGiG": 5.399
+    },
+    "gnn_score": 6.4378,
+    "path_score": 0.9998,
+    "empirical_confidence": 0.9972,
+    "score_quantile_train": 0.9972,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 95,
+    "disease_id": 116,
+    "disease_name": "116",
+    "gene_id": 14897,
+    "gene_name": "14897",
+    "hybrid_score": 0.9989,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 153,
+    "path_counts": {
+      "DpSpDaG": 87,
+      "DaGpPWpG": 38,
+      "DaGiG": 28
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 255.8176,
+      "DaGpPWpG": 9.8021,
+      "DaGiG": 6.5727
+    },
+    "gnn_score": 6.4572,
+    "path_score": 0.9997,
+    "empirical_confidence": 0.9972,
+    "score_quantile_train": 0.9972,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 96,
+    "disease_id": 107,
+    "disease_name": "107",
+    "gene_id": 2227,
+    "gene_name": "2227",
+    "hybrid_score": 0.9989,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 398,
+    "path_counts": {
+      "DpSpDaG": 178,
+      "DaGpPWpG": 217,
+      "DaGiG": 3
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 523.3969,
+      "DaGpPWpG": 55.9754,
+      "DaGiG": 0.7042
+    },
+    "gnn_score": 6.363,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9972,
+    "score_quantile_train": 0.9972,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 97,
+    "disease_id": 58,
+    "disease_name": "58",
+    "gene_id": 3097,
+    "gene_name": "3097",
+    "hybrid_score": 0.9989,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 490,
+    "path_counts": {
+      "DpSpDaG": 80,
+      "DaGpPWpG": 360,
+      "DaGiG": 50
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 235.2346,
+      "DaGpPWpG": 92.8624,
+      "DaGiG": 11.7369
+    },
+    "gnn_score": 6.403,
+    "path_score": 0.9998,
+    "empirical_confidence": 0.9972,
+    "score_quantile_train": 0.9972,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 98,
+    "disease_id": 78,
+    "disease_name": "78",
+    "gene_id": 4084,
+    "gene_name": "4084",
+    "hybrid_score": 0.9989,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 611,
+    "path_counts": {
+      "DpSpDaG": 118,
+      "DaGpPWpG": 469,
+      "DaGiG": 24
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 346.971,
+      "DaGpPWpG": 120.979,
+      "DaGiG": 5.6337
+    },
+    "gnn_score": 6.3527,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9972,
+    "score_quantile_train": 0.9972,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 99,
+    "disease_id": 80,
+    "disease_name": "80",
+    "gene_id": 18325,
+    "gene_name": "18325",
+    "hybrid_score": 0.9989,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 267,
+    "path_counts": {
+      "DpSpDaG": 67,
+      "DaGpPWpG": 174,
+      "DaGiG": 26
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 197.009,
+      "DaGpPWpG": 44.8835,
+      "DaGiG": 6.1032
+    },
+    "gnn_score": 8.04,
+    "path_score": 0.9973,
+    "empirical_confidence": 0.9972,
+    "score_quantile_train": 0.9972,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  },
+  {
+    "rank": 100,
+    "disease_id": 81,
+    "disease_name": "81",
+    "gene_id": 14311,
+    "gene_name": "14311",
+    "hybrid_score": 0.9988,
+    "label": 1,
+    "is_known_link": true,
+    "top_metapath": "DpSpDaG",
+    "total_path_evidence": 493,
+    "path_counts": {
+      "DpSpDaG": 114,
+      "DaGpPWpG": 373,
+      "DaGiG": 6
+    },
+    "weighted_contributions": {
+      "DpSpDaG": 335.2093,
+      "DaGpPWpG": 96.2157,
+      "DaGiG": 1.4084
+    },
+    "gnn_score": 6.3302,
+    "path_score": 1.0,
+    "empirical_confidence": 0.9972,
+    "score_quantile_train": 0.9972,
+    "metapath_weights_used": {
+      "DpSpDaG": 2.9404,
+      "DaGpPWpG": 0.258,
+      "DaGiG": 0.2347
+    }
+  }
+]

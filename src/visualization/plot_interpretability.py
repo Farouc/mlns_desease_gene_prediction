@@ -18,17 +18,14 @@ from src.visualization.utils import (
     save_figure,
 )
 
-METAPATH_ORDER = ["DaGpPpG", "DpPhG", "GcGaD"]
-
-
 def _load_metapath_weights(result_dir: Path) -> dict[str, float]:
     """Load metapath weights from saved hybrid artifacts."""
     weight_path = result_dir / "metapath_weights.json"
     if not weight_path.exists():
-        return {name: 1.0 for name in METAPATH_ORDER}
+        return {}
 
     raw = load_json(weight_path)
-    return {name: float(raw.get(name, 1.0)) for name in METAPATH_ORDER}
+    return {str(name): float(value) for name, value in raw.items()}
 
 
 def _load_top_prediction_pairs(result_dir: Path) -> set[tuple[int, int]]:
@@ -84,6 +81,7 @@ def generate_metapath_contributions_plot(
     if counts_df.empty:
         raise RuntimeError("No rows available to compute metapath contributions.")
 
+    metapath_order = sorted(counts_df["metapath"].astype(str).unique().tolist())
     weights = _load_metapath_weights(result_path)
     counts_df["weight"] = counts_df["metapath"].map(weights).fillna(1.0).astype(float)
     counts_df["contribution"] = counts_df["count"].astype(float) * counts_df["weight"]
@@ -91,12 +89,12 @@ def generate_metapath_contributions_plot(
     contribution = (
         counts_df.groupby("metapath", as_index=True)["contribution"]
         .mean()
-        .reindex(METAPATH_ORDER, fill_value=0.0)
+        .reindex(metapath_order, fill_value=0.0)
     )
 
     fig, ax = plt.subplots(figsize=(8.0, 5.6))
     bars = ax.bar(
-        METAPATH_ORDER,
+        metapath_order,
         contribution.values.astype(float),
         color=["#4E79A7", "#F28E2B", "#59A14F"],
         edgecolor="black",

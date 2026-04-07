@@ -1,0 +1,7 @@
+2026-04-07 17:43:58 | INFO | hetionet_pipeline | Run directory: /mnt/D/mva_P2/MLNS/experiments_hala/results/full_cuda_hybrid_node2vec
+2026-04-07 17:43:58 | INFO | hetionet_pipeline | Loading raw edges from /mnt/D/mva_P2/MLNS/data/raw/hetionet_subset_edges.csv
+2026-04-07 17:44:09 | INFO | hetionet_pipeline | Running heuristic baselines
+2026-04-07 17:44:12 | INFO | hetionet_pipeline | Training Node2Vec on device=cuda
+2026-04-07 17:48:10 | INFO | hetionet_pipeline | Training HAN on device=cuda
+2026-04-07 17:48:16 | INFO | hetionet_pipeline | Running hybrid fusion using node2vec scores
+2026-04-07 17:48:28 | INFO | hetionet_pipeline | Pipeline completed. Summary saved to /mnt/D/mva_P2/MLNS/experiments_hala/results/full_cuda_hybrid_node2vec/metrics.json

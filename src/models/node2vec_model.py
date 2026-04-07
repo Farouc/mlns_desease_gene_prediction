@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+from time import perf_counter
+from typing import Callable
 
 import networkx as nx
 import pandas as pd
@@ -58,8 +60,24 @@ class Node2VecLinkPredictor:
         dst_all = dst + src
         return torch.tensor([src_all, dst_all], dtype=torch.long)
 
-    def fit(self, graph: nx.Graph, num_nodes: int) -> None:
-        """Train Node2Vec embeddings."""
+    def fit(
+        self,
+        graph: nx.Graph,
+        num_nodes: int,
+        eval_every: int = 0,
+        eval_callback: Callable[[int, "Node2VecLinkPredictor"], dict[str, float] | None] | None = None,
+    ) -> list[dict[str, float]]:
+        """Train Node2Vec embeddings and return per-epoch training history.
+
+        Args:
+            graph: Input homogeneous graph.
+            num_nodes: Number of nodes in the graph.
+            eval_every: If >0 and eval_callback is provided, evaluate every N epochs.
+            eval_callback: Optional callback returning validation metrics for an epoch.
+
+        Returns:
+            List of dictionaries (one per epoch) with loss/time and optional metrics.
+        """
         edge_index = self._edge_index_from_graph(graph).to(self.device)
 
         self.model = Node2Vec(
@@ -87,13 +105,35 @@ class Node2VecLinkPredictor:
             else torch.optim.Adam(list(self.model.parameters()), lr=self.config.lr)
         )
 
+        history: list[dict[str, float]] = []
         self.model.train()
-        for _ in range(self.config.epochs):
+        for epoch in range(1, self.config.epochs + 1):
+            epoch_start = perf_counter()
+            batch_losses: list[float] = []
             for pos_rw, neg_rw in loader:
                 optimizer.zero_grad()
                 loss = self.model.loss(pos_rw.to(self.device), neg_rw.to(self.device))
                 loss.backward()
                 optimizer.step()
+                batch_losses.append(float(loss.item()))
+
+            epoch_seconds = float(perf_counter() - epoch_start)
+            avg_loss = float(sum(batch_losses) / max(1, len(batch_losses)))
+            record: dict[str, float] = {
+                "epoch": float(epoch),
+                "train_loss": avg_loss,
+                "epoch_seconds": epoch_seconds,
+            }
+
+            if eval_callback is not None and eval_every > 0 and epoch % eval_every == 0:
+                metrics = eval_callback(epoch, self)
+                if metrics:
+                    for key, value in metrics.items():
+                        record[str(key)] = float(value)
+
+            history.append(record)
+
+        return history
 
     def embeddings(self) -> torch.Tensor:
         """Return all node embeddings."""

@@ -28,6 +28,7 @@ from src.visualization.plot_interpretability import (
 from src.visualization.plot_metrics import generate_model_comparison_bar
 from src.visualization.plot_pr_curve import generate_pr_curve_comparison
 from src.visualization.plot_ranking_distribution import generate_ranking_distribution_plot
+from src.visualization.plot_training_dynamics import generate_training_dynamics_plot
 from src.visualization.utils import DEFAULT_FIGURE_DIR, DEFAULT_RUN_DIR, ensure_dir
 
 REQUIRED_FIGURES = [
@@ -38,6 +39,7 @@ REQUIRED_FIGURES = [
     "ranking_distribution.png",
     "metapath_contributions.png",
     "performance_vs_interpretability.png",
+    "training_dynamics.png",
 ]
 
 
@@ -101,18 +103,22 @@ def main() -> None:
         ("ranking_distribution", generate_ranking_distribution_plot),
         ("metapath_contributions", generate_metapath_contributions_plot),
         ("performance_vs_interpretability", generate_performance_vs_interpretability_plot),
+        ("training_dynamics", generate_training_dynamics_plot),
     ]
 
     print("[run] Generating figures...")
     for name, fn in jobs:
-        saved = fn(
-            result_dir=result_dir,
-            figure_dir=figure_dir,
-            overwrite=bool(args.overwrite),
-            save_pdf=save_pdf,
-        )
-        status = "saved" if saved else "skipped"
-        print(f"  - {name}: {status}")
+        try:
+            saved = fn(
+                result_dir=result_dir,
+                figure_dir=figure_dir,
+                overwrite=bool(args.overwrite),
+                save_pdf=save_pdf,
+            )
+            status = "saved" if saved else "skipped"
+            print(f"  - {name}: {status}")
+        except (FileNotFoundError, RuntimeError, KeyError, ValueError) as exc:
+            print(f"  - {name}: skipped ({exc})")
 
     print("[done] Figure generation complete.")
     print("[done] Expected core/advanced PNG outputs:")

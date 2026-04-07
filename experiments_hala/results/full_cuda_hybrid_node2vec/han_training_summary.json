@@ -1,0 +1,6 @@
+{
+  "epochs": 70,
+  "eval_every": 5,
+  "best_val_auc_pr": 0.6601552390837634,
+  "best_val_auc_pr_epoch": 70
+}

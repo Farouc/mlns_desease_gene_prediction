@@ -23,6 +23,7 @@ from src.visualization.utils import (
 )
 
 _ALPHA_SWEEP_CANDIDATES = [
+    "alpha_tradeoff_metrics.csv",
     "alpha_sweep.csv",
     "alpha_tradeoff.csv",
     "alpha_vs_performance.csv",
@@ -46,13 +47,24 @@ def _load_existing_alpha_sweep(result_dir: Path) -> pd.DataFrame | None:
 def _compute_alpha_sweep(result_dir: Path, num_points: int) -> pd.DataFrame:
     """Approximate alpha sweep from saved HAN/path scores without retraining."""
     hybrid_df = load_model_predictions(result_dir, model="hybrid")
-    required_cols = {"disease_local_id", "label", "score_han", "score_path"}
+    gnn_col: str | None = None
+    for candidate in ("score_gnn_for_hybrid", "score_han", "score_node2vec"):
+        if candidate in hybrid_df.columns:
+            gnn_col = candidate
+            break
+
+    required_cols = {"disease_local_id", "label", "score_path"}
     missing_cols = required_cols.difference(hybrid_df.columns)
     if missing_cols:
         raise RuntimeError(f"Hybrid predictions missing required columns: {sorted(missing_cols)}")
+    if gnn_col is None:
+        raise RuntimeError(
+            "Hybrid predictions missing a GNN score column. "
+            "Expected one of: score_gnn_for_hybrid, score_han, score_node2vec."
+        )
 
     labels = hybrid_df["label"].astype(int).to_numpy()
-    han_scores = hybrid_df["score_han"].astype(float).to_numpy()
+    han_scores = hybrid_df[gnn_col].astype(float).to_numpy()
     path_scores = hybrid_df["score_path"].astype(float).to_numpy()
     alpha_values = np.linspace(0.0, 1.0, num_points)
 

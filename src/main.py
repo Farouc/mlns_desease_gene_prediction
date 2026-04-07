@@ -274,6 +274,10 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
             output_dir=weights_dir,
             device=device,
         )
+        if "training_history_path" in n2v_result:
+            copy_file(n2v_result["training_history_path"], result_dir / "node2vec_training_history.csv")
+        if "training_summary_path" in n2v_result:
+            copy_file(n2v_result["training_summary_path"], result_dir / "node2vec_training_summary.json")
 
         node2vec_metrics = evaluate_and_persist(
             predictions=n2v_result["test_predictions"],
@@ -313,6 +317,10 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
                 device=device,
                 seed=seed,
             )
+            if "training_history_path" in han_result:
+                copy_file(han_result["training_history_path"], result_dir / "han_training_history.csv")
+            if "training_summary_path" in han_result:
+                copy_file(han_result["training_summary_path"], result_dir / "han_training_summary.json")
 
             han_metrics = evaluate_and_persist(
                 predictions=han_result["test_predictions"],
@@ -405,10 +413,36 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
         val_path_scores = hybrid_model.path_score(x_val)
 
         alpha_values = np.linspace(0.0, 1.0, 21)
-        alpha_metrics = [
-            compute_auc_pr(y_val, alpha * gnn_val + (1.0 - alpha) * val_path_scores)
-            for alpha in alpha_values
-        ]
+        alpha_eval_records: list[dict[str, float]] = []
+        for alpha in alpha_values:
+            combined_scores = alpha * gnn_val + (1.0 - alpha) * val_path_scores
+            alpha_val_df = pd.DataFrame(
+                {
+                    "disease_local_id": val_merged["disease_local_id"].astype(int).to_numpy(),
+                    "gene_local_id": val_merged["gene_local_id"].astype(int).to_numpy(),
+                    "label": y_val.astype(int),
+                    "score_alpha": combined_scores.astype(float),
+                }
+            )
+            alpha_eval = evaluate_predictions(
+                predictions=alpha_val_df,
+                score_col="score_alpha",
+                label_col="label",
+                disease_col="disease_local_id",
+                gene_col="gene_local_id",
+                top_k=int(config["evaluation"]["top_k"]),
+            )
+            alpha_eval_records.append(
+                {
+                    "alpha": float(alpha),
+                    "auc_roc": float(alpha_eval.metrics.get("auc_roc", 0.0)),
+                    "auc_pr": float(alpha_eval.metrics.get("auc_pr", 0.0)),
+                    "hits@10": float(alpha_eval.metrics.get("hits@10", 0.0)),
+                    "mrr": float(alpha_eval.metrics.get("mrr", 0.0)),
+                }
+            )
+        alpha_metrics = [float(row["auc_pr"]) for row in alpha_eval_records]
+        save_dataframe(pd.DataFrame(alpha_eval_records), result_dir / "alpha_tradeoff_metrics.csv")
 
         if bool(hybrid_cfg.get("search_alpha", True)):
             best_alpha, _ = grid_search_alpha(

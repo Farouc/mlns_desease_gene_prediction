@@ -94,8 +94,15 @@ class MetapathCounter:
         src_map = self.adjacency.get(src_type, {}).get(dst_type, {})
         n_src = self._type_size(src_type)
         n_dst = self._type_size(dst_type)
-        if n_src <= 0 or n_dst <= 0:
+        if n_src < 0 or n_dst < 0:
             mat = sp.csr_matrix((0, 0), dtype="float32")
+            self.adj_matrix_cache[key] = mat
+            return mat
+
+        if n_src == 0 or n_dst == 0:
+            # Preserve typed dimensions (n_src x n_dst) even when one side is
+            # empty so chained metapath multiplications remain shape-compatible.
+            mat = sp.csr_matrix((n_src, n_dst), dtype="float32")
             self.adj_matrix_cache[key] = mat
             return mat
 

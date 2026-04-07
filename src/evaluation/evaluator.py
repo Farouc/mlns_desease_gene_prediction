@@ -68,6 +68,59 @@ class EvaluationResult:
     ranked_predictions: pd.DataFrame
 
 
+def empirical_quantiles_from_reference(
+    reference_scores: np.ndarray,
+    query_scores: np.ndarray,
+) -> np.ndarray:
+    """Compute empirical quantiles of query scores vs a reference score distribution.
+
+    For each query score s, returns:
+        q(s) = P_ref(S <= s)
+
+    Args:
+        reference_scores: 1D score array used as the empirical distribution
+            (typically train scores for the same model).
+        query_scores: 1D score array to map into quantiles.
+
+    Returns:
+        1D array of quantiles in [0, 1].
+    """
+    ref = np.asarray(reference_scores, dtype=float).reshape(-1)
+    qry = np.asarray(query_scores, dtype=float).reshape(-1)
+    if ref.size == 0:
+        return np.full_like(qry, np.nan, dtype=float)
+
+    ref_sorted = np.sort(ref)
+    counts = np.searchsorted(ref_sorted, qry, side="right")
+    return counts.astype(float) / float(ref_sorted.size)
+
+
+def add_empirical_confidence(
+    predictions: pd.DataFrame,
+    score_col: str,
+    reference_scores: np.ndarray,
+    quantile_col: str = "score_quantile_train",
+    confidence_col: str = "empirical_confidence",
+) -> pd.DataFrame:
+    """Attach empirical score quantiles/confidence columns to predictions.
+
+    Confidence here is a non-parametric score confidence derived from the
+    training score distribution:
+        confidence(s) = P_train(S <= s)
+    """
+    if score_col not in predictions.columns:
+        raise KeyError(f"Missing score column '{score_col}' in predictions.")
+
+    out = predictions.copy()
+    quantiles = empirical_quantiles_from_reference(
+        reference_scores=reference_scores,
+        query_scores=out[score_col].astype(float).to_numpy(),
+    )
+    out[quantile_col] = quantiles
+    out[confidence_col] = quantiles
+    return out
+
+
 def evaluate_predictions(
     predictions: pd.DataFrame,
     score_col: str,

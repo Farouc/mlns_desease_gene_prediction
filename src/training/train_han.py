@@ -118,6 +118,15 @@ def run_han_training(
                 f"Epoch {epoch:03d} | loss={float(loss.item()):.4f} | val_auc={val_auc:.4f}"
             )
 
+    train_scores = model.score_pairs(
+        data=data,
+        pairs_df=train_df,
+        disease_type=disease_type,
+        gene_type=gene_type,
+        disease_col="disease_local_id",
+        gene_col="gene_local_id",
+        device=device,
+    )
     val_scores = model.score_pairs(
         data=data,
         pairs_df=val_df,
@@ -137,6 +146,7 @@ def run_han_training(
         device=device,
     )
 
+    train_pred = _merge_scores(train_df, train_scores)
     val_pred = _merge_scores(val_df, val_scores)
     test_pred = _merge_scores(test_df, test_scores)
 
@@ -144,15 +154,19 @@ def run_han_training(
     weights_path = out_dir / "han_weights.pt"
     model.save_weights(weights_path)
 
+    train_path = out_dir / "han_train_predictions.csv"
     val_path = out_dir / "han_val_predictions.csv"
     test_path = out_dir / "han_test_predictions.csv"
+    save_dataframe(train_pred, train_path)
     save_dataframe(val_pred, val_path)
     save_dataframe(test_pred, test_path)
 
     return {
         "weights_path": weights_path,
+        "train_predictions": train_pred,
         "val_predictions": val_pred,
         "test_predictions": test_pred,
+        "train_predictions_path": train_path,
         "val_predictions_path": val_path,
         "test_predictions_path": test_path,
     }

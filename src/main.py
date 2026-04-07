@@ -20,6 +20,7 @@ from src.data.load_hetionet import load_hetionet_edges
 from src.data.preprocess import run_preprocessing
 from src.data.split import create_splits
 from src.evaluation.evaluator import (
+    add_empirical_confidence,
     evaluate_predictions,
     plot_ablation_bars,
     plot_alpha_performance,
@@ -80,6 +81,24 @@ def save_effective_config(config: dict[str, Any], path: str | Path) -> None:
         yaml.safe_dump(config, handle, sort_keys=False)
 
 
+def _sigmoid(values: np.ndarray) -> np.ndarray:
+    """Numerically stable sigmoid for score calibration."""
+    clipped = np.clip(values.astype(float), -40.0, 40.0)
+    return 1.0 / (1.0 + np.exp(-clipped))
+
+
+def _prepare_gnn_scores_for_hybrid(raw_scores: np.ndarray, gnn_source: str) -> np.ndarray:
+    """Map GNN scores to hybrid-ready scale.
+
+    - HAN scores are already sigmoid probabilities in [0, 1].
+    - Node2Vec scores are raw dot products, so we apply sigmoid for fusion.
+    """
+    scores = raw_scores.astype(float)
+    if gnn_source == "han" and np.all((scores >= 0.0) & (scores <= 1.0)):
+        return scores
+    return _sigmoid(scores)
+
+
 def evaluate_and_persist(
     predictions: pd.DataFrame,
     score_col: str,
@@ -89,10 +108,19 @@ def evaluate_and_persist(
     top_k: int,
     disease_col: str,
     gene_col: str,
+    train_reference_scores: np.ndarray | None = None,
 ) -> dict[str, float]:
     """Evaluate one model, save predictions/metrics/plots, and return metrics."""
+    scored_predictions = predictions.copy()
+    if train_reference_scores is not None and "empirical_confidence" not in scored_predictions.columns:
+        scored_predictions = add_empirical_confidence(
+            predictions=scored_predictions,
+            score_col=score_col,
+            reference_scores=np.asarray(train_reference_scores, dtype=float),
+        )
+
     eval_result = evaluate_predictions(
-        predictions=predictions,
+        predictions=scored_predictions,
         score_col=score_col,
         label_col="label",
         disease_col=disease_col,
@@ -104,12 +132,12 @@ def evaluate_and_persist(
     metrics_path = result_dir / f"{model_name}_metrics.json"
     ranked_path = result_dir / f"{model_name}_ranked_predictions.csv"
 
-    save_dataframe(predictions, pred_path)
+    save_dataframe(scored_predictions, pred_path)
     save_dataframe(eval_result.ranked_predictions, ranked_path)
     save_metrics(eval_result.metrics, metrics_path)
 
     plot_roc_pr_curves(
-        predictions=predictions,
+        predictions=scored_predictions,
         score_col=score_col,
         label_col="label",
         output_dir=figure_dir,
@@ -182,6 +210,7 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
         undirected=bool(config["graph"]["undirected"]),
     )
 
+    train_df = load_split_dataframe(split_artifacts.train_path)
     test_df = load_split_dataframe(split_artifacts.test_path)
 
     metadata = load_json(processed_artifacts.metadata_path)
@@ -198,7 +227,13 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
         logger.info("Running heuristic baselines")
         with Path(graph_artifacts["networkx"]).open("rb") as handle:
             nx_graph = pickle.load(handle)
+        heur_train_scores = score_pairs_with_heuristics(nx_graph, train_df)
         heur_scores = score_pairs_with_heuristics(nx_graph, test_df)
+        heur_train_pred = train_df.merge(
+            heur_train_scores,
+            on=["disease_global_id", "gene_global_id"],
+            how="left",
+        )
         heur_pred = test_df.merge(
             heur_scores,
             on=["disease_global_id", "gene_global_id"],
@@ -214,9 +249,11 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
             top_k=int(config["evaluation"]["top_k"]),
             disease_col="disease_global_id",
             gene_col="gene_global_id",
+            train_reference_scores=heur_train_pred["score_heuristic_avg"].to_numpy(dtype=float),
         )
         metrics_by_model["heuristics"] = heur_metrics
         model_outputs["heuristics"] = {
+            "train": heur_train_pred,
             "test": heur_pred,
             "score_col": "score_heuristic_avg",
             "disease_col": "disease_global_id",
@@ -247,9 +284,11 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
             top_k=int(config["evaluation"]["top_k"]),
             disease_col="disease_global_id",
             gene_col="gene_global_id",
+            train_reference_scores=n2v_result["train_predictions"]["score_node2vec"].to_numpy(dtype=float),
         )
         metrics_by_model["node2vec"] = node2vec_metrics
         model_outputs["node2vec"] = {
+            "train": n2v_result["train_predictions"],
             "val": n2v_result["val_predictions"],
             "test": n2v_result["test_predictions"],
             "score_col": "score_node2vec",
@@ -284,9 +323,11 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
                 top_k=int(config["evaluation"]["top_k"]),
                 disease_col="disease_local_id",
                 gene_col="gene_local_id",
+                train_reference_scores=han_result["train_predictions"]["score_han"].to_numpy(dtype=float),
             )
             metrics_by_model["han"] = han_metrics
             model_outputs["han"] = {
+                "train": han_result["train_predictions"],
                 "val": han_result["val_predictions"],
                 "test": han_result["test_predictions"],
                 "score_col": "score_han",
@@ -306,30 +347,45 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
             cache_size=int(config.get("metapaths", {}).get("cache_size", 100_000)),
         )
 
+        source_train = model_outputs[gnn_source]["train"].copy()
         source_val = model_outputs[gnn_source]["val"].copy()
         source_test = model_outputs[gnn_source]["test"].copy()
         source_score_col = model_outputs[gnn_source]["score_col"]
 
+        train_counts_long = compute_metapath_counts_for_predictions(source_train, counter, metapaths)
         val_counts_long = compute_metapath_counts_for_predictions(source_val, counter, metapaths)
         test_counts_long = compute_metapath_counts_for_predictions(source_test, counter, metapaths)
 
+        train_counts = pivot_metapath_counts(train_counts_long)
         val_counts = pivot_metapath_counts(val_counts_long)
         test_counts = pivot_metapath_counts(test_counts_long)
 
         join_keys = ["disease_local_id", "gene_local_id"]
+        train_merged = source_train.merge(train_counts, on=join_keys, how="left").fillna(0)
         val_merged = source_val.merge(val_counts, on=join_keys, how="left").fillna(0)
         test_merged = source_test.merge(test_counts, on=join_keys, how="left").fillna(0)
 
         metapath_names = list(metapaths.keys())
         for col in metapath_names:
+            if col not in train_merged.columns:
+                train_merged[col] = 0
             if col not in val_merged.columns:
                 val_merged[col] = 0
             if col not in test_merged.columns:
                 test_merged[col] = 0
 
+        x_train = train_merged[metapath_names].to_numpy(dtype=float)
+        y_train = train_merged["label"].to_numpy(dtype=int)
         x_val = val_merged[metapath_names].to_numpy(dtype=float)
         y_val = val_merged["label"].to_numpy(dtype=int)
-        gnn_val = val_merged[source_score_col].to_numpy(dtype=float)
+        gnn_train = _prepare_gnn_scores_for_hybrid(
+            train_merged[source_score_col].to_numpy(dtype=float),
+            gnn_source=gnn_source,
+        )
+        gnn_val = _prepare_gnn_scores_for_hybrid(
+            val_merged[source_score_col].to_numpy(dtype=float),
+            gnn_source=gnn_source,
+        )
 
         hybrid_model = HybridModel(
             alpha=float(hybrid_cfg["alpha"]),
@@ -337,7 +393,7 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
         )
 
         if bool(hybrid_cfg.get("learn_metapath_weights", True)):
-            learned_weights = hybrid_model.fit_path_weights(x_val, y_val)
+            learned_weights = hybrid_model.fit_path_weights(x_train, y_train)
         else:
             configured_weights = hybrid_cfg.get("metapath_weights", {})
             learned_weights = np.array(
@@ -365,10 +421,24 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
             hybrid_model.alpha = best_alpha
 
         x_test = test_merged[metapath_names].to_numpy(dtype=float)
-        gnn_test = test_merged[source_score_col].to_numpy(dtype=float)
+        gnn_test = _prepare_gnn_scores_for_hybrid(
+            test_merged[source_score_col].to_numpy(dtype=float),
+            gnn_source=gnn_source,
+        )
 
         test_merged["score_path"] = hybrid_model.path_score(x_test)
         test_merged["score_hybrid"] = hybrid_model.final_score(gnn_test, x_test)
+        test_merged["score_gnn_for_hybrid"] = gnn_test
+
+        train_merged["score_path"] = hybrid_model.path_score(x_train)
+        train_merged["score_hybrid"] = hybrid_model.final_score(gnn_train, x_train)
+        train_merged["score_gnn_for_hybrid"] = gnn_train
+
+        test_merged = add_empirical_confidence(
+            predictions=test_merged,
+            score_col="score_hybrid",
+            reference_scores=train_merged["score_hybrid"].to_numpy(dtype=float),
+        )
 
         hybrid_metrics = evaluate_and_persist(
             predictions=test_merged,
@@ -379,6 +449,7 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
             top_k=int(config["evaluation"]["top_k"]),
             disease_col="disease_local_id",
             gene_col="gene_local_id",
+            train_reference_scores=train_merged["score_hybrid"].to_numpy(dtype=float),
         )
         metrics_by_model["hybrid"] = hybrid_metrics
 

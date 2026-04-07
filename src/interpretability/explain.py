@@ -185,6 +185,16 @@ def build_explanations(
             None
         )
         path_score = float(getattr(row, "score_path")) if hasattr(row, "score_path") else None
+        empirical_confidence = (
+            float(getattr(row, "empirical_confidence"))
+            if hasattr(row, "empirical_confidence")
+            else None
+        )
+        score_quantile_train = (
+            float(getattr(row, "score_quantile_train"))
+            if hasattr(row, "score_quantile_train")
+            else None
+        )
 
         record: dict[str, Any] = {
             "rank": rank,
@@ -204,6 +214,10 @@ def build_explanations(
             record["gnn_score"] = round(gnn_score, 4)
         if path_score is not None:
             record["path_score"] = round(path_score, 4)
+        if empirical_confidence is not None:
+            record["empirical_confidence"] = round(empirical_confidence, 4)
+        if score_quantile_train is not None:
+            record["score_quantile_train"] = round(score_quantile_train, 4)
         if metapath_weights:
             record["metapath_weights_used"] = {k: round(v, 4) for k, v in metapath_weights.items()}
 
@@ -233,6 +247,10 @@ def build_summary_table(
             row["gnn_score"] = exp["gnn_score"]
         if "path_score" in exp:
             row["path_score"] = exp["path_score"]
+        if "empirical_confidence" in exp:
+            row["empirical_confidence"] = exp["empirical_confidence"]
+        if "score_quantile_train" in exp:
+            row["score_quantile_train"] = exp["score_quantile_train"]
         for name, count in exp["path_counts"].items():
             row[f"count_{name}"] = count
         for name, contrib in exp.get("weighted_contributions", {}).items():

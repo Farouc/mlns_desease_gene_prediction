@@ -65,13 +65,21 @@ def run_node2vec_training(
     predictor = Node2VecLinkPredictor(cfg, device=device)
     predictor.fit(graph=graph, num_nodes=num_nodes)
 
-    _ = load_split_dataframe(train_split_path)
+    train_df = load_split_dataframe(train_split_path)
     val_df = load_split_dataframe(val_split_path)
     test_df = load_split_dataframe(test_split_path)
 
+    train_scores = predictor.score_pairs(train_df)
     val_scores = predictor.score_pairs(val_df)
     test_scores = predictor.score_pairs(test_df)
 
+    train_pred = _attach_labels(
+        score_df=train_scores,
+        split_df=train_df,
+        score_col="score_node2vec",
+        disease_col="disease_global_id",
+        gene_col="gene_global_id",
+    )
     val_pred = _attach_labels(
         score_df=val_scores,
         split_df=val_df,
@@ -91,15 +99,19 @@ def run_node2vec_training(
     weights_path = out_dir / "node2vec_weights.pt"
     predictor.save_weights(weights_path)
 
+    train_path = out_dir / "node2vec_train_predictions.csv"
     val_path = out_dir / "node2vec_val_predictions.csv"
     test_path = out_dir / "node2vec_test_predictions.csv"
+    save_dataframe(train_pred, train_path)
     save_dataframe(val_pred, val_path)
     save_dataframe(test_pred, test_path)
 
     return {
         "weights_path": weights_path,
+        "train_predictions": train_pred,
         "val_predictions": val_pred,
         "test_predictions": test_pred,
+        "train_predictions_path": train_path,
         "val_predictions_path": val_path,
         "test_predictions_path": test_path,
     }

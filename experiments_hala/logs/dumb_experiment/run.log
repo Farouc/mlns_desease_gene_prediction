@@ -1,0 +1,7 @@
+2026-04-06 22:25:51 | INFO | hetionet_pipeline | Run directory: C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\experiments_hala\results\dumb_experiment
+2026-04-06 22:25:51 | INFO | hetionet_pipeline | Loading raw edges from C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\data\raw\hetionet_subset_edges.csv
+2026-04-06 22:25:55 | INFO | hetionet_pipeline | Creating train/val/test splits
+2026-04-06 22:25:57 | INFO | hetionet_pipeline | Building train-only graph (removing val/test positive edges)
+2026-04-06 22:26:01 | INFO | hetionet_pipeline | Full encoded edges: 506403 | Train-only edges: 498010 | Removed: 8393
+2026-04-06 22:26:05 | INFO | hetionet_pipeline | Adjacency rebuilt from train-only edges for metapath counting
+2026-04-06 22:26:05 | INFO | hetionet_pipeline | Running heuristic baselines

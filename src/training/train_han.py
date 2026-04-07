@@ -46,7 +46,7 @@ def run_han_training(
     seed: int,
 ) -> dict[str, Any]:
     """Train HAN on disease-gene links and export predictions."""
-    data = torch.load(hetero_graph_path, map_location=device)
+    data = torch.load(hetero_graph_path, map_location=torch.device(device), weights_only=False)
     data = data.to(device)
     if not hasattr(data, "metadata"):
         raise RuntimeError("Loaded hetero graph does not expose metadata().")

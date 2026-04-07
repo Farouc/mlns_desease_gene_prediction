@@ -136,8 +136,8 @@ def build_graphs_from_processed(
     undirected: bool,
 ) -> dict[str, Path]:
     """Load processed CSVs, build graph objects, and save serialized artifacts."""
-    edges = pd.read_csv(encoded_edges_path)
-    node_mapping = pd.read_csv(node_mapping_path)
+    edges = pd.read_csv(encoded_edges_path, low_memory=False)
+    node_mapping = pd.read_csv(node_mapping_path, low_memory=False)
 
     nx_graph = build_networkx_graph(edges, node_mapping, undirected)
     hetero_data = build_heterodata(edges, node_mapping, undirected)

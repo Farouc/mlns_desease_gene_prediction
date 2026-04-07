@@ -167,8 +167,8 @@ def create_splits(
     seed: int,
 ) -> SplitArtifacts:
     """Generate train/val/test splits with positives and sampled negatives."""
-    edges = pd.read_csv(encoded_edges_path)
-    nodes = pd.read_csv(node_mapping_path)
+    edges = pd.read_csv(encoded_edges_path, low_memory=False)
+    nodes = pd.read_csv(node_mapping_path, low_memory=False)
 
     positives = extract_positive_disease_gene_pairs(edges, disease_type, gene_type)
     train_pos, val_pos, test_pos = _split_dataframe(positives, val_ratio, test_ratio, seed)

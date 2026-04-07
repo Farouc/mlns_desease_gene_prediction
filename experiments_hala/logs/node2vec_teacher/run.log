@@ -1,0 +1,27 @@
+2026-04-07 00:35:38 | INFO | hetionet_pipeline | Run directory: C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\experiments_hala\results\node2vec_teacher
+2026-04-07 00:35:38 | INFO | hetionet_pipeline | Loading raw edges from C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\data\raw\hetionet_subset_edges.csv
+2026-04-07 00:35:44 | INFO | hetionet_pipeline | Creating train/val/test splits
+2026-04-07 00:35:46 | INFO | hetionet_pipeline | Building train-only graph (removing val/test positive edges)
+2026-04-07 00:35:47 | INFO | hetionet_pipeline | Full encoded edges: 590775 | Train-only edges: 582382 | Removed: 8393
+2026-04-07 00:35:52 | INFO | hetionet_pipeline | Adjacency rebuilt from train-only edges for metapath counting
+2026-04-07 00:35:52 | INFO | hetionet_pipeline | Running heuristic baselines
+2026-04-07 00:35:59 | INFO | hetionet_pipeline | Training HAN on device=cpu
+2026-04-07 00:38:17 | INFO | hetionet_pipeline | Run directory: C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\experiments_hala\results\node2vec_teacher
+2026-04-07 00:38:17 | INFO | hetionet_pipeline | Loading raw edges from C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\data\raw\hetionet_subset_edges.csv
+2026-04-07 00:38:22 | INFO | hetionet_pipeline | Creating train/val/test splits
+2026-04-07 00:38:29 | INFO | hetionet_pipeline | Run directory: C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\experiments_hala\results\node2vec_teacher
+2026-04-07 00:38:29 | INFO | hetionet_pipeline | Loading raw edges from C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\data\raw\hetionet_subset_edges.csv
+2026-04-07 00:38:34 | INFO | hetionet_pipeline | Creating train/val/test splits
+2026-04-07 00:38:36 | INFO | hetionet_pipeline | Building train-only graph (removing val/test positive edges)
+2026-04-07 00:38:37 | INFO | hetionet_pipeline | Full encoded edges: 590775 | Train-only edges: 582382 | Removed: 8393
+2026-04-07 00:38:42 | INFO | hetionet_pipeline | Adjacency rebuilt from train-only edges for metapath counting
+2026-04-07 00:38:42 | INFO | hetionet_pipeline | Running heuristic baselines
+2026-04-07 00:38:50 | INFO | hetionet_pipeline | Training Node2Vec on device=cpu
+2026-04-07 00:44:10 | INFO | hetionet_pipeline | Run directory: C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\experiments_hala\results\node2vec_teacher
+2026-04-07 00:44:10 | INFO | hetionet_pipeline | Loading raw edges from C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\data\raw\hetionet_subset_edges.csv
+2026-04-07 00:44:16 | INFO | hetionet_pipeline | Creating train/val/test splits
+2026-04-07 00:44:18 | INFO | hetionet_pipeline | Building train-only graph (removing val/test positive edges)
+2026-04-07 00:44:19 | INFO | hetionet_pipeline | Full encoded edges: 590775 | Train-only edges: 582382 | Removed: 8393
+2026-04-07 00:44:25 | INFO | hetionet_pipeline | Adjacency rebuilt from train-only edges for metapath counting
+2026-04-07 00:44:25 | INFO | hetionet_pipeline | Running heuristic baselines
+2026-04-07 00:44:33 | INFO | hetionet_pipeline | Training Node2Vec on device=cpu

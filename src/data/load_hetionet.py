@@ -77,7 +77,7 @@ def load_hetionet_edges(
     if not path.exists():
         raise HetionetLoaderError(f"Raw edge file not found: {path}")
 
-    df = pd.read_csv(path)
+    df = pd.read_csv(path, low_memory=False)
     if df.empty:
         raise HetionetLoaderError(f"Raw edge file is empty: {path}")
 

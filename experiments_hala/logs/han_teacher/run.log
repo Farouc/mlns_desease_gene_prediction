@@ -1,0 +1,10 @@
+2026-04-07 00:33:12 | INFO | hetionet_pipeline | Run directory: C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\experiments_hala\results\han_teacher
+2026-04-07 00:33:12 | INFO | hetionet_pipeline | Loading raw edges from C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\data\raw\hetionet_subset_edges.csv
+2026-04-07 00:33:17 | INFO | hetionet_pipeline | Creating train/val/test splits
+2026-04-07 00:33:19 | INFO | hetionet_pipeline | Building train-only graph (removing val/test positive edges)
+2026-04-07 00:33:20 | INFO | hetionet_pipeline | Full encoded edges: 590775 | Train-only edges: 582382 | Removed: 8393
+2026-04-07 00:33:24 | INFO | hetionet_pipeline | Adjacency rebuilt from train-only edges for metapath counting
+2026-04-07 00:33:24 | INFO | hetionet_pipeline | Running heuristic baselines
+2026-04-07 00:33:31 | INFO | hetionet_pipeline | Training HAN on device=cpu
+2026-04-07 00:34:19 | INFO | hetionet_pipeline | Running hybrid fusion using han scores
+2026-04-07 00:34:26 | INFO | hetionet_pipeline | Pipeline completed. Summary saved to C:\Users\halac\Desktop\mlns\mlns_desease_gene_prediction\experiments_hala\results\han_teacher\metrics.json

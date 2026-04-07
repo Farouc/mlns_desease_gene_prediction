@@ -1,0 +1,23 @@
+{
+  "run_dir": "C:\\Users\\halac\\Desktop\\mlns\\mlns_desease_gene_prediction\\experiments_hala\\results\\han_teacher",
+  "model_metrics": {
+    "heuristics": {
+      "auc_roc": 0.7299895671779901,
+      "auc_pr": 0.4040416723704501,
+      "hits@10": 0.8382352941176471,
+      "mrr": 0.5843726471274487
+    },
+    "han": {
+      "auc_roc": 0.8606766150998969,
+      "auc_pr": 0.5303652160764694,
+      "hits@10": 0.8382352941176471,
+      "mrr": 0.6711523218044018
+    },
+    "hybrid": {
+      "auc_roc": 0.8651137542519778,
+      "auc_pr": 0.559559148920272,
+      "hits@10": 0.8455882352941176,
+      "mrr": 0.7028382136552181
+    }
+  }
+}

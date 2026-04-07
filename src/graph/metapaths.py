@@ -15,9 +15,9 @@ except ImportError:  # pragma: no cover
 
 
 DEFAULT_METAPATHS: dict[str, list[str]] = {
-    "DaGpPpG": ["Disease", "Gene", "Pathway", "Phenotype", "Gene"],
-    "DpPhG": ["Disease", "Pathway", "Phenotype", "Gene"],
-    "GcGaD": ["Gene", "Pathway", "Gene", "Disease"],
+    "DpSpDaG": ["Disease", "Symptom", "Disease", "Gene"],
+    "DaGpPWpG": ["Disease", "Gene", "Pathway", "Gene"],
+    "GpPWpGaD": ["Gene", "Pathway", "Gene", "Disease"],
 }
 
 
@@ -195,7 +195,10 @@ class MetapathCounter:
                 total += dfs(step + 1, int(next_id), next_visited)
             return total
 
-        initial_visited = {(metapath_types[0], start_id)} if avoid_cycles else set()
+        initial_visited = (
+                {(metapath_types[0], start_id), (metapath_types[-1], end_id)}
+                if avoid_cycles else set()
+            )
         count = dfs(step=0, current_id=start_id, visited=initial_visited)
         self.count_cache.set(cache_key, count)
         return count

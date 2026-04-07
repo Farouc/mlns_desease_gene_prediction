@@ -14,8 +14,8 @@ data:
   node_types:
     - Disease
     - Gene
+    - Pathway
     - Symptom
-    - Phenotype
   disease_type: Disease
   gene_type: Gene
   split:
@@ -28,24 +28,22 @@ graph:
   undirected: true
 
 metapaths:
-  cache_size: 100000
   definitions:
-    DaGpPpG:
-      - Disease
-      - Gene
-      - Symptom
-      - Phenotype
-      - Gene
-    DpPhG:
+    DpSpDaG:           # Disease-Symptom-Disease-Gene
       - Disease
       - Symptom
-      - Phenotype
-      - Gene
-    GcGaD:
-      - Gene
-      - Symptom
-      - Gene
       - Disease
+      - Gene
+    DaGpPWpG:          # Disease-Gene-Pathway-Gene
+      - Disease
+      - Gene
+      - Pathway
+      - Gene
+    DaGiG:            # Disease-Gene-Gene (via protein interaction)
+      - Disease
+      - Gene
+      - Gene
+
 
 models:
   run:
@@ -73,7 +71,7 @@ models:
     lr: 0.005
     weight_decay: 0.0001
     batch_size: 256
-    epochs: 50
+    epochs: 70
     eval_every: 5
   hybrid:
     gnn_source: han
@@ -92,4 +90,4 @@ interpretability:
   top_n: 100
 
 runtime:
-  device: auto
+  device: "cpu"

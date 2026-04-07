@@ -22,7 +22,6 @@ print(f'Done. {len(df)} edges saved.')
 df = pd.read_csv('data/raw/hetionet_subset_edges.csv')
 print(df.head(3))
 
-# source looks like "Disease::DOID:9352", target like "Gene::1"
 df['source_type'] = df['source'].str.split('::').str[0]
 df['target_type'] = df['target'].str.split('::').str[0]
 df['source_id']   = df['source'].str.split('::').str[1]

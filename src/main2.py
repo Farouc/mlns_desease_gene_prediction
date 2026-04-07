@@ -35,7 +35,10 @@ from src.interpretability.explain import (
     save_all_interpretability_outputs,
 )
 from src.interpretability.path_extraction import compute_metapath_counts_for_predictions
-from src.models.heuristics import score_pairs_with_heuristics
+from src.models.heuristics import (
+    compute_heuristic_normalization_stats,
+    score_pairs_with_heuristics,
+)
 from src.models.hybrid_model import HybridModel, grid_search_alpha
 from src.training.train_han import run_han_training
 from src.training.train_node2vec import run_node2vec_training
@@ -302,7 +305,16 @@ def run_pipeline(config: dict[str, Any], config_path: str | Path, run_name: str 
         logger.info("Running heuristic baselines")
         with Path(graph_artifacts["networkx"]).open("rb") as handle:
             nx_graph = pickle.load(handle)
-        heur_scores = score_pairs_with_heuristics(nx_graph, test_df)
+
+        train_df = load_split_dataframe(split_artifacts.train_path)
+        train_heur_scores = score_pairs_with_heuristics(nx_graph, train_df)
+        normalization_stats = compute_heuristic_normalization_stats(train_heur_scores)
+
+        heur_scores = score_pairs_with_heuristics(
+            nx_graph,
+            test_df,
+            normalization_stats=normalization_stats,
+        )
         heur_pred = test_df.merge(
             heur_scores,
             on=["disease_global_id", "gene_global_id"],

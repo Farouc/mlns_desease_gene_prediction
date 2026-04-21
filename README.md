@@ -1,201 +1,257 @@
-# Interpretable Disease-Gene Prediction via Hybrid Graph Learning and Metapath Reasoning
+# Interpretable Disease-Gene Prediction via Hybrid Graph Learning
 
-This repository provides a modular research pipeline for disease-gene link prediction on a Hetionet v1.0 subset (Disease, Gene, Pathway, Phenotype), with explicit interpretability via metapath counting and a publication-ready visualization layer.
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.12+-red.svg)](https://pytorch.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Features
+## Abstract
 
-- Heterogeneous graph construction from Hetionet edge CSV.
-- Link prediction baselines and learned models:
-  - Common Neighbors
-  - Adamic-Adar
-  - Node2Vec (dot-product scoring)
-  - HAN (Heterogeneous Attention Network)
-- Metapath reasoning with cycle-aware traversal and caching for:
-  - `DaGpPpG`
-  - `DpPhG`
-  - `GcGaD`
-- Hybrid fusion:
-  - `s_final = alpha * s_GNN + (1 - alpha) * s_path`
-- Evaluation metrics:
-  - AUC-ROC
-  - AUC-PR
-  - Hits@10
-  - MRR
-- Interpretability artifacts:
-  - top metapath per prediction
-  - metapath path counts
-- Visualization pipeline from saved artifacts only (no retraining), including:
-  - model comparison bar plot
-  - PR curve comparison
-  - alpha trade-off curve
-  - Hits@k curve
-  - ranking distribution
-  - metapath contribution plot
-  - performance vs interpretability scatter
+This repository implements a hybrid framework for disease-gene link prediction on heterogeneous biomedical knowledge graphs. We combine Graph Neural Network representations with interpretable metapath-based logistic regression, achieving state-of-the-art ranking performance while providing transparent, per-prediction explanations. The framework is evaluated on Hetionet v1.0 and demonstrates that phenotype-sharing metapaths are the dominant predictor of novel disease-gene associations.
+
+## Motivation
+
+Predicting associations between diseases and genes is fundamental to drug discovery, variant prioritisation, and personalised medicine. While Graph Neural Networks achieve strong predictive performance, they operate as black boxes—a critical limitation in biomedical settings where researchers must justify experimental follow-up decisions. Our hybrid approach bridges this gap by fusing learned GNN representations with explicit, interpretable metapath evidence.
+
+## Methods
+
+We implement and compare four approaches:
+
+| Method | Description |
+|--------|-------------|
+| **Heuristics** | Common Neighbours and Adamic-Adar on projected bipartite graph |
+| **Node2Vec** | Skip-gram embeddings from biased random walks on homogeneous projection |
+| **HAN** | Heterogeneous Attention Network with node-level and semantic-level attention |
+| **Hybrid** | Linear interpolation of GNN probabilities with metapath logistic regression |
+
+### Hybrid Model
+
+The hybrid model computes:
+
+```
+s_hybrid(d,g) = α · P_GNN(d,g) + (1-α) · P_path(d,g)
+```
+
+where `P_path` is obtained from logistic regression on standardised metapath counts:
+
+```
+P_path = σ(w₁·c̃₁ + w₂·c̃₂ + w₃·c̃₃ + b)
+```
+
+The fusion parameter `α` is optimised via grid search on validation AUC-PR.
+
+### Metapaths
+
+We define three biologically motivated metapaths:
+
+| Metapath | Schema | Biological Rationale |
+|----------|--------|---------------------|
+| `DpSpDaG` | Disease→Symptom←Disease→Gene | Phenotype-driven gene discovery |
+| `DaGpPWpG` | Disease→Gene→Pathway←Gene | Pathway co-participation |
+| `DaGiG` | Disease→Gene↔Gene | Protein-protein interaction |
+
+## Results
+
+Best results from `experiments_hala/results/full_cuda_hybrid_han/`:
+
+| Model | AUC-ROC | AUC-PR | Hits@10 | MRR |
+|-------|--------:|-------:|--------:|----:|
+| Heuristics | 0.752 | 0.425 | 0.831 | 0.586 |
+| Node2Vec | 0.939 | 0.669 | 0.904 | 0.793 |
+| HAN | 0.914 | 0.649 | 0.868 | 0.658 |
+| **Hybrid** | **0.967** | **0.838** | **0.912** | **0.805** |
+
+**Key findings:**
+- Hybrid achieves +25% AUC-PR over HAN and +19% over Node2Vec
+- Optimal fusion at α=0.7 (70% GNN, 30% metapath)
+- `DpSpDaG` metapath receives highest coefficient (3.21), confirming phenotype sharing as primary predictor
+- 86% of top-50 predictions are validated known associations
 
 ## Repository Structure
 
-```text
-project_root/
+```
+├── configs/                    # Experiment configurations
+│   ├── default.yaml
+│   ├── han.yaml               # HAN-specific config
+│   ├── han_hala.yaml          # Extended metapath config
+│   └── node2vec.yaml
 ├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── splits/
+│   ├── raw/                   # Raw Hetionet edge CSV
+│   ├── processed/             # Processed graph artifacts
+│   └── splits/                # Train/val/test splits
 ├── src/
-│   ├── data/
-│   ├── graph/
-│   ├── models/
-│   ├── training/
-│   ├── evaluation/
-│   ├── interpretability/
-│   ├── visualization/
-│   ├── utils/
-│   └── main.py
-├── configs/
-├── experiments/
-│   ├── results/
-│   ├── logs/
-│   └── figures/
-├── reports/
-├── notebooks/
-├── scripts/
-├── requirements.txt
-├── setup.py
-└── main.py
+│   ├── data/                  # Data loading and splitting
+│   ├── graph/                 # Graph construction (NetworkX, PyG)
+│   ├── models/                # Model implementations
+│   │   ├── heuristics.py      # CN, AA baselines
+│   │   ├── node2vec_model.py  # Node2Vec wrapper
+│   │   ├── han_model.py       # HAN implementation
+│   │   └── hybrid_model.py    # Hybrid fusion with logistic regression
+│   ├── training/              # Training loops
+│   ├── evaluation/            # Metrics computation
+│   ├── interpretability/      # Metapath explanation generation
+│   ├── visualization/         # Publication figure generation
+│   └── main.py                # Main experiment runner
+├── experiments_hala/          # Experiment outputs
+│   ├── results/               # Metrics, predictions, weights
+│   └── figures/               # Generated plots (PNG/PDF)
+├── reports/                   # LaTeX report and figures
+├── scripts/                   # Helper scripts
+│   ├── run_all.sh
+│   ├── generate_plots.py
+│   └── ablation_alpha.sh
+└── requirements.txt
 ```
 
 ## Installation
 
 ```bash
-base
+# Clone repository
+git clone <repository-url>
+cd mlns_desease_gene_prediction
+
+# Create environment
+conda create -n disease-gene python=3.9
+conda activate disease-gene
+
+# Install dependencies
 pip install -r requirements.txt
 pip install -e .
+
+# For GPU support (adjust CUDA version as needed)
+pip install torch-geometric torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
 ```
 
-Note: `torch-geometric` must match your local PyTorch/CUDA setup.
+## Dataset Preparation
 
-## Dataset Instructions
+1. Download Hetionet edges and place at `data/raw/hetionet_subset_edges.csv`
 
-1. Place the project input file at:
+2. Required CSV columns (flexible naming):
+   - Source node ID: `source`, `source_id`, `src`
+   - Target node ID: `target`, `target_id`, `dst`
+   - Source type: `source_type`, `src_type`
+   - Target type: `target_type`, `dst_type`
+   - Edge type: `edge_type`, `relation`, `metaedge`
 
-```text
-data/raw/hetionet_subset_edges.csv
-```
+3. Node types are filtered to: Disease, Gene, Pathway, Symptom/Phenotype
 
-2. The loader infers common column aliases. Required semantics:
+## Reproducing Experiments
 
-- source node ID (`source`, `source_id`, `src`, ...)
-- target node ID (`target`, `target_id`, `dst`, ...)
-- source node type (`source_type`, `src_type`, ...)
-- target node type (`target_type`, `dst_type`, ...)
-- edge type (`edge_type`, `relation`, `metaedge`, ...)
-
-3. Node types are filtered to:
-
-- Disease
-- Gene
-- Pathway
-- Phenotype
-
-## Run Training / Evaluation
-
-Main entrypoint:
+### Quick Start
 
 ```bash
-python main.py --config configs/default.yaml
+# Run full pipeline with HAN + Hybrid
+python main.py --config configs/han_hala.yaml
+
+# Run with GPU
+python main.py --config configs/han_hala.yaml --override runtime.device=cuda
 ```
 
-Alternative:
+### Step-by-Step Reproduction
 
 ```bash
-python src/main.py --config configs/han.yaml
+# 1. Train HAN baseline
+python main.py --config configs/han.yaml \
+  --override models.run.hybrid=false
+
+# 2. Train Node2Vec baseline
+python main.py --config configs/node2vec.yaml \
+  --override models.run.hybrid=false
+
+# 3. Train Hybrid model (HAN + metapath)
+python main.py --config configs/han_hala.yaml \
+  --override models.hybrid.gnn_source=han
+
+# 4. Alpha sweep ablation
+bash scripts/ablation_alpha.sh configs/han_hala.yaml
 ```
 
-Override example:
+### Generate Figures
 
 ```bash
-python main.py \
-  --config configs/han.yaml \
-  --override models.hybrid.alpha=0.5 models.hybrid.search_alpha=false
-```
-
-Helper scripts:
-
-```bash
-bash scripts/run_all.sh
-bash scripts/ablation_alpha.sh configs/han.yaml
-```
-
-## Generate Publication Figures (No Retraining)
-
-This uses only saved artifacts from the final run:
-
-```bash
+# From saved results (no retraining)
 python scripts/generate_plots.py \
-  --result-dir experiments/results/final_full_cuda_hybrid_e15_fast \
-  --figure-dir experiments/figures/final_full_cuda_hybrid_e15_fast
+  --result-dir experiments_hala/results/full_cuda_hybrid_han \
+  --figure-dir experiments_hala/figures/full_cuda_hybrid_han
 ```
 
-Optional:
+### Run Interpretability Analysis
 
 ```bash
-python scripts/generate_plots.py --overwrite
+# Generate per-prediction explanations
+python -c "
+from src.interpretability.explain import save_all_interpretability_outputs
+save_all_interpretability_outputs(
+    'experiments_hala/results/full_cuda_hybrid_han',
+    top_n=100
+)
+"
 ```
 
-## Retained Runs in This Repository
+## Configuration Options
 
-- `experiments/results/n2v_full_cuda`
-- `experiments/results/han_full_cuda`
-- `experiments/results/final_full_cuda_hybrid_e15_fast`
-- matching figure folders under `experiments/figures/`
+Key configuration parameters in YAML:
 
-## Final Full CUDA Hybrid Results
+```yaml
+models:
+  hybrid:
+    gnn_source: han          # Base GNN: 'han' or 'node2vec'
+    alpha: 0.7               # Fusion weight (0=path only, 1=GNN only)
+    search_alpha: true       # Grid search for optimal alpha
+    learn_metapath_weights: true  # Fit logistic regression
 
-Run folder: `experiments/results/final_full_cuda_hybrid_e15_fast`
+metapaths:
+  definitions:
+    DpSpDaG: [Disease, Symptom, Disease, Gene]
+    DaGpPWpG: [Disease, Gene, Pathway, Gene]
+    DaGiG: [Disease, Gene, Gene]
 
-| Model      | AUC-ROC | AUC-PR | Hits@10 | MRR |
-|------------|--------:|-------:|--------:|----:|
-| Heuristics | 0.7525  | 0.4251 | 0.8309  | 0.5857 |
-| Node2Vec   | 0.8498  | 0.4938 | 0.8603  | 0.5866 |
-| HAN        | 0.8248  | 0.4573 | 0.6397  | 0.3550 |
-| Hybrid     | 0.8495  | 0.5192 | 0.8088  | 0.6287 |
+evaluation:
+  top_k: 10                  # Hits@k threshold
 
-## Expected Artifacts
+interpretability:
+  top_n: 100                 # Number of predictions to explain
+```
 
-Per run in `experiments/results/<run_id>/`:
+## Output Artifacts
 
-- `config_input.yaml`
-- `config_resolved.yaml`
-- `metrics.json`
-- `<model>_metrics.json`
-- `<model>_predictions.csv`
-- `<model>_ranked_predictions.csv`
-- `metapath_weights.json` (hybrid runs)
-- `metapath_counts_test_long.csv` (hybrid runs)
-- `interpretability_top_predictions.json` (hybrid runs)
-- `weights/` with saved model outputs and checkpoints
+Each experiment run produces:
 
-Figures in `experiments/figures/final_full_cuda_hybrid_e15_fast/` include:
+| File | Description |
+|------|-------------|
+| `metrics.json` | All model metrics |
+| `metapath_weights.json` | Learned logistic regression coefficients |
+| `hybrid_ranked_predictions.csv` | Ranked predictions with scores |
+| `interpretability_summary.csv` | Per-prediction explanations with contributions |
+| `interpretability_top_predictions.json` | Detailed top-N explanations |
 
-- existing training-time plots (ROC/PR, ablations, alpha-vs-performance)
-- publication plots:
-  - `model_comparison_bar.png`
-  - `pr_curve_comparison.png`
-  - `alpha_tradeoff.png`
-  - `hits_at_k.png`
-  - `ranking_distribution.png`
-  - `metapath_contributions.png`
-  - `performance_vs_interpretability.png`
+## Citation
 
-Both `.png` and `.pdf` are exported for publication plots.
+If you use this code, please cite:
 
-## Reproducibility
+```bibtex
+@article{yartaoui2025disease,
+  title={Interpretable Disease-Gene Prediction via Hybrid Graph Learning and Metapath Reasoning},
+  author={Yartaoui, Farouk and Chafik, Hala and Tbatou, Hamza and Maddah, Ilyas},
+  journal={CentraleSup{\'e}lec MLNS Project Report},
+  year={2025}
+}
+```
 
-- Global seeding in `src/utils/seed.py`
-- Deterministic split generation in `src/data/split.py`
-- Config snapshots per run
+## Authors
 
-## Notes
+- Farouk Yartaoui
+- Hala Chafik
+- Hamza Tbatou
+- Ilyas Maddah
 
-- HAN requires `torch-geometric`; if unavailable, HAN training is skipped.
-- Hybrid fusion expects a GNN source with validation predictions (`han` or `node2vec`).
+CentraleSupélec, 2025
+
+## License
+
+MIT License. See `LICENSE` for details.
+
+## Acknowledgments
+
+- Hetionet dataset: [Himmelstein et al., eLife 2017](https://doi.org/10.7554/eLife.26726)
+- HAN architecture: [Wang et al., WWW 2019](https://doi.org/10.1145/3308558.3313562)
+- Node2Vec: [Grover & Leskovec, KDD 2016](https://doi.org/10.1145/2939672.2939754)

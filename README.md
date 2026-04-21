@@ -224,31 +224,19 @@ Each experiment run produces:
 | `interpretability_summary.csv` | Per-prediction explanations with contributions |
 | `interpretability_top_predictions.json` | Detailed top-N explanations |
 
-## Citation
 
-If you use this code, please cite:
-
-```bibtex
-@article{yartaoui2025disease,
-  title={Interpretable Disease-Gene Prediction via Hybrid Graph Learning and Metapath Reasoning},
-  author={Yartaoui, Farouk and Chafik, Hala and Tbatou, Hamza and Maddah, Ilyas},
-  journal={CentraleSup{\'e}lec MLNS Project Report},
-  year={2025}
-}
-```
 
 ## Authors
 
 - Farouk Yartaoui
+- Ilyas Madah
 - Hala Chafik
 - Hamza Tbatou
-- Ilyas Maddah
+
 
 CentraleSupélec, 2025
 
-## License
 
-MIT License. See `LICENSE` for details.
 
 ## Acknowledgments
 
